@@ -125,3 +125,12 @@ pre-registered death. Both witnesses testified for the defense.
 
 **What *did* fail:** our first shuffle — and the walk kept the failure. It is the reason
 the contract has a symmetry control at all.
+
+*Notes for the curious.* Induction heads — the reading mechanism of rung 3 — were
+mapped by Olsson et al. (2022); our blind selector recovers exactly the heads they
+documented, which is what lets us designate the notebook *before* touching it. Rung 3
+exists at all because the Pythia models were released fully open, training checkpoints
+included (Biderman et al., 2023). And our freeze has a respectable cousin in the
+interpretability toolbox — mean ablation (Wang et al., 2023; Zhang & Nanda, 2024);
+what the walk adds is the pre-registration and the witnesses. Full references:
+[`paper/references.md`](../paper/references.md).

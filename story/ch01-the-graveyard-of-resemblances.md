@@ -107,3 +107,12 @@ substrate in this story, is disarmingly simple:
 defined that transfers identically across substrates, the rule of the walk would be
 empty piety. Chapter 3 shows the same freeze performed, unchanged, on a toy physical
 cascade, a hand-built mini-network, and real language models trained by other people.
+
+*Notes for the curious.* The question "does more produce genuinely new laws?" has a
+founding essay: Anderson's *More is Different* (1972). Its modern, quantitative quarrel
+— are the sudden capability jumps of large models real, or artifacts of how we score
+them? — runs through Wei et al. (2022) and Schaeffer et al. (2023); the walk takes no
+side on scores, which is precisely why it needed a different currency. Noether's own
+paper is Noether (1918); both of her legacies — invariants as definitions, symmetries
+as conservation — will appear before this story ends. Full references:
+[`paper/references.md`](../paper/references.md).

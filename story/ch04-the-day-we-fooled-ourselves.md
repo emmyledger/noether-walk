@@ -119,3 +119,11 @@ criteria frozen before the relaunch.
 **What *did* fail:** us. The freeze leaked the future into training, the networks
 learned to drink from it, and five runs went into the bin. The failure is chapter 4 of
 this story — and the reason there is a tripwire in every experiment since.
+
+*Notes for the curious.* The abrupt onset our living runs reproduce — induction ability
+arriving on a characteristic schedule during training — is documented in Olsson et al.
+(2022). And the broader lesson has company: the interpretability community has its own
+catalogue of ways interventions can quietly measure the wrong thing (Zhang & Nanda,
+2024); ours was the training-time member of that family, which is exactly why it could
+not stay a checklist item and had to become machinery. Full references:
+[`paper/references.md`](../paper/references.md).

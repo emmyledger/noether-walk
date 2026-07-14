@@ -1,9 +1,9 @@
 # Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates
 
 **Emmy Ledger**
-*Draft v0.1 — abstract and introduction only. Outline for the remaining sections:
-[`outline.md`](outline.md). Every quantitative claim will link to a reproduction
-command; see [`../repro/`](../repro/).*
+*Draft v0.3 — abstract + §1–4 drafted; remaining sections: [`outline.md`](outline.md).
+Citations are (Author, year); full entries in [`references.md`](references.md). Every
+quantitative claim will link to a reproduction command; see [`../repro/`](../repro/).*
 
 ## Abstract
 
@@ -66,9 +66,12 @@ We define an invariant as a triplet:
 
 The gesture at the center of this work targets a specific structural motif: many systems
 steer fast activity by writing and rereading a **slow variable** — call it σ, or the
-*notebook*. In a transformer solving an in-context task, σ is the residual-stream
-content that downstream heads reread; in a recurrent world model, σ is the latent state
-by construction; in our toy cascade, σ is a slow memory that gates a second instability.
+*notebook*. The motif is old: slow modes that "enslave" fast dynamics are the organizing
+objects of synergetics (Haken, 1983). In a transformer solving an in-context task, σ is
+the residual-stream content that downstream heads reread — the residual stream as a
+communication channel in the sense of Elhage et al. (2021); in a recurrent world model,
+σ is the latent state by construction (Hafner et al., 2019); in our toy cascade, σ is a
+slow memory that gates a second instability.
 The gesture is to **freeze** σ: replace its content by its mean over σ's own axis of
 variation — same magnitude budget, zero information — while the rest of the system runs
 untouched.
@@ -128,7 +131,9 @@ The invariant then becomes an instrument, and the rest of the paper is what it m
 ### 1.4 Relation to the emergence literature
 
 We use the word once, deliberately. A lively debate asks whether "emergent abilities"
-of large models are real discontinuities or artifacts of metric choice. We take no side
+of large models are real discontinuities (Wei et al., 2022) or artifacts of metric
+choice (Schaeffer et al., 2023) — the modern echo of a question at least as old as
+Anderson's "More is Different" (1972). We take no side
 on score curves. Our contribution is orthogonal and mechanistic: with a falsifiable
 handle on the *mechanism*, we find that even the mechanism is gradual — a
 developmental, constructive process whose dimension locks in at formation — while being
@@ -176,7 +181,7 @@ intervention is run**, by a published criterion that does not consult the outcom
 - *Pretrained transformers (induction)*: the K/V content reread by induction heads,
   where the heads are selected a priori by a documented prefix-matching criterion — the
   selector, run blind, recovers the induction heads independently reported for these
-  models.
+  models (Olsson et al., 2022).
 - *Task vectors / in-context rules*: the residual-stream content at the demonstration
   positions, at a layer fixed in the plan.
 - *Hidden-state tracking*: the residual content carrying the belief estimate, localized
@@ -201,7 +206,10 @@ with collapse criteria stated as **absolute floors**, never relative slippage.
 
 **Why "freeze" rather than ablate or noise.** Ablation confounds information loss with
 budget change (downstream components react to absence); noise injection confounds it
-with perturbation. The frozen page is the calmest object in the system; the only thing
+with perturbation. Our freeze is kin to the mean-ablation of the interpretability
+literature (Wang et al., 2023; Zhang & Nanda, 2024) — with two differences that carry
+the argument: the mean is taken over σ's *own axis of variation*, and the gesture never
+travels alone (witnesses below). The frozen page is the calmest object in the system; the only thing
 removed is what it *said*.
 
 **The witness taxonomy.** "Freezing breaks things" is not a finding. Every experiment
@@ -283,10 +291,11 @@ result replicated on seeds chosen after the plan was frozen.
 The candidate invariant was put at risk on substrates chosen to share nothing — a toy
 physics cascade; purpose-built in-context learners in which memorization is impossible
 by construction; pretrained transformers from four architecture families, untouched by
-us; and one small transformer we trained from scratch on real code — across seven
-capability types: fresh-pair recall, induction, in-context rules (task vectors),
-rule composition, hidden-state tracking, syntactic agreement, and explicit world-model
-state maintenance.
+us (Radford et al., 2019; Biderman et al., 2023; Qwen Team, 2024; OLMo Team, 2024); and
+one small transformer we trained from scratch on real code — across seven capability
+types: fresh-pair recall, induction (Olsson et al., 2022), in-context rules in the sense
+of task/function vectors (Hendel et al., 2023; Todd et al., 2024), rule composition,
+hidden-state tracking, syntactic agreement, and explicit world-model state maintenance.
 
 ### 3.2 Installed arc: freeze at inference
 
@@ -325,7 +334,8 @@ same freeze — the gesture obstructs the capability, not optimization. No rerou
 observed: the network does not build an alternative notebook elsewhere.
 
 *Real network.* We trained a small transformer from scratch on real code, where
-induction heads form abruptly at 145–195M tokens (the onset has the documented shape).
+induction heads form abruptly at 145–195M tokens — the onset has the shape documented
+by Olsson et al. (2022).
 Under the causally-rebuilt permanent freeze (§2.4):
 
 - **Formation clause: 0/3 frozen runs formed** — max induction score ≤ 0.012 against a
@@ -353,8 +363,8 @@ substrate-independence opposes two architectures with opposite ontologies for σ
   the residual stream (probe R² 0.60–0.74, localized on held-out runs beforehand).
   Freeze: the tracking capability collapses to ≈16 % of live, below the unigram
   baseline; shadow negative; control survives.
-- **Explicit** — a recurrent world model (RSSM) on the *same* process, whose state z is
-  σ **by construction** (R²(z→belief) 0.93–0.98). Freeze z: capability ≈ 0, shadow
+- **Explicit** — a recurrent world model (RSSM; Hafner et al., 2019) on the *same*
+  process, whose state z is σ **by construction** (R²(z→belief) 0.93–0.98). Freeze z: capability ≈ 0, shadow
   negative — the **same signature**.
 
 One gesture, two architectures that share neither mechanism, training objective, nor
@@ -467,7 +477,7 @@ correlates several factors rather than isolating one.
 The tiers are categorical. A *law* needs a substrate where theory predicts K\* as a
 function of a dial we control. Hidden-state tracking provides one: a k-state hidden
 process with ambiguous emissions forces the system to carry a belief over states;
-belief-state geometry predicts that belief lives on the (k−1)-simplex, so the naive
+belief-state geometry (Shai et al., 2024) predicts that belief lives on the (k−1)-simplex, so the naive
 prediction is **K\* = k−1**, with k as the dial. Sequences are fresh, so memorization is
 impossible; the number is declared before the measurement.
 

@@ -18,10 +18,10 @@ someone else took for you.
 
 ## Two doors
 
-| door | for whom | where |
+| door | for whom | start here |
 |---|---|---|
-| **A Walk with Emmy Noether** | anyone curious; no prerequisites; diagrams, one idea at a time, including the day we fooled ourselves | [`story/`](story/) |
-| **Freezing the Notebook** *(formal paper)* | researchers; claims, numbers, methods, reservations | [`paper/`](paper/) |
+| **A Walk with Emmy Noether** | anyone curious; no prerequisites; diagrams, one idea at a time, including the day we fooled ourselves | [chapter 1](story/ch01-the-graveyard-of-resemblances.md) (plan: [`story/outline.md`](story/outline.md)) |
+| **Freezing the Notebook** *(formal paper)* | researchers; claims, numbers, methods, reservations | [`paper/draft.md`](paper/draft.md) (outline: [`paper/outline.md`](paper/outline.md), references: [`paper/references.md`](paper/references.md)) |
 
 ## Reproducibility is the spine, not an appendix
 

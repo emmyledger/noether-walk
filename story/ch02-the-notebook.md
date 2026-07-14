@@ -124,3 +124,11 @@ damage in disguise, it would break every capable system it touched. Chapter 3 in
 a twin that solves the same task *without* a notebook — from memory, in its weights. The
 same freeze, applied to the twin, does nothing at all. Ignorance only kills those who
 depended on the page.
+
+*Notes for the curious.* Slow variables that govern fast dynamics are an old and deep
+idea — physics calls it the "enslaving principle" of synergetics (Haken, 1983). In
+transformers, the stream the notes are written into was described as a communication
+channel by Elhage et al. (2021), and the discovery that in-context rules condense into
+compact reusable vectors is due to Hendel et al. (2023) and Todd et al. (2024) — their
+task vectors are, in our language, notebooks of rules. Full references:
+[`paper/references.md`](../paper/references.md).
