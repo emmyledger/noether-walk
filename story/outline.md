@@ -64,7 +64,16 @@ a world model whose state is *declared by construction*. Same freeze, same death
 invariant crosses the implicit↔explicit divide — and the dimensions differ exactly as
 chapter 7 predicts (declared state keeps the full geometry k−1; discovered notebook
 compresses to ~2k/3).
-**Figure:** the two machines side by side, one gesture, one signature.
+**Coda — the pair that killed a bridge.** The same two machines, reused as an
+instrument: they move the notebook's dimension at fixed task complexity, and thereby
+falsified our own freshly-supported prediction that the loss landscape's complexity
+(the local learning coefficient) *reads* the notebook's size. Built in the morning,
+bounded by evening: λ̂ belongs to the architecture, K\* to the task; they only travel
+together when the task drags both. The walk's fastest full cycle of
+conjecture → support → falsification, and proof that a matched pair of substrates is
+worth more than any single one.
+**Figure:** the two machines side by side, one gesture, one signature; inset: K\*
+tripling while λ̂ stays flat.
 
 ## 9. What structure costs
 The Chomsky question, made mechanistic: are "impossible" languages harder for a learning

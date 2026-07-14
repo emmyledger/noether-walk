@@ -81,6 +81,15 @@ maps to a runnable command.
   identity to 1e-8) but the charge is architectural: the formal core stays open.
 - The bridge: notebook dimension *builds and locks* at formation (2→32, replicated);
   reported as a measured coincidence, not a derivation.
+- **Does the landscape read the notebook? A bridge built and bounded in one day
+  (2026-07 results).** Act 1: λ̂ (local learning coefficient) grows with K\* across k on
+  the HMM family (Pearson 0.86) — pre-registered prediction supported. Act 2, same day:
+  the implicit/explicit pair reused as a lever moves K\* at FIXED k, and λ̂ decouples
+  (Pearson(Δλ̂, ΔK\*) ≈ −0.97; intra-RSSM: K\* triples while λ̂ stays flat ~0.5).
+  Verdict: **λ̂ is governed by ARCHITECTURE, K\* by the TASK**; their co-variation is
+  mediated by k, not a direct link. A clean bound, reported as such — and the tie
+  {k=6, k=9 → K\*=5, λ̂ ×2} is the fingerprint separating the geometric dimension
+  (λ̂ side, ~k−1) from the predictive one (K\*, ~2k/3).
 
 ## 6. What the measurement buys (and what structure costs)
 - Engineering value of K\*: it predicts the floor of a world model's latent size; cost
@@ -103,8 +112,9 @@ Slow variables / enslaving in synergetics; developmental interpretability.
 Verbatim discipline of the program: σ is a *candidate* slow variable tested by a
 falsifiable gesture; no nontrivial formation-linked conserved charge; no derivation that
 the freeze symmetry is the invariance group; K\* neither universal nor a capability
-measure; no generalization beyond tested substrates (≤3B inference-side; one
-self-trained model formation-side).
+measure; **no direct λ̂↔K\* link** (the LLC and the notebook dimension are independent
+measures that co-vary only through task complexity k); no generalization beyond tested
+substrates (≤3B inference-side; one self-trained model formation-side).
 
 ## 9. Open fronts
 Mechanism of the K\* tiers; formal bridge (freeze-symmetry ↔ invariance group); LLC∝K\*
