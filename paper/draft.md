@@ -618,7 +618,69 @@ whose construction is visible in the singular geometry of the loss (§5.2) as th
 gradual breaking of a symmetry (§5.4). Interventional necessity — not discontinuity —
 is the robust phenomenon.
 
+## 6. What the measurement buys — and what structure costs
+
+Two pragmatic questions close the empirical part: does the interventional dimension K\*
+have engineering value, and does *structure* (in the linguistic sense) cost anything a
+mechanist can measure?
+
+### 6.1 K\* predicts the floor of a designed latent
+
+If K\* measures the predictively load-bearing dimension of a notebook, it should bound
+the size of a latent one *designs*. Test, on the explicit world model (k = 12 hidden
+states, K\*(declared) ≈ 11): sweep the latent size d_z and measure FLOPs-to-target.
+Latents **below K\*** (d_z = 6, 9) **never reach the target**; d_z ≥ 12 do. The
+cost-to-target curve has a trough near d_z = 16 (~1.4×K\*); gross oversizing
+(d_z = 192) costs 5.5× — though only 1.36× against a moderately-sized baseline
+(d_z = 48): the economy factor depends on how naive the baseline is, and we report it
+that way. Sweeping k = 6…18: the **floor scales with k** (≈k to 1.5k) and so does the
+trough (9 → 16 → 24 → 48), while the economy factor honestly *decreases* (8.3× → 3.1×,
+large only when the fixed default is absurdly oversized). This is a proof of concept on
+a toy — an interventional dimension you can measure is a floor you don't have to guess —
+not an energy law for AI.
+
+### 6.2 The cost of structure follows non-locality, and the architecture decides who pays
+
+The Chomskyan question, made mechanistic: does *hierarchical* structure cost a learner
+anything? Substrate: matched grammars where agreement must track either the
+hierarchically correct subject across nested clauses (non-local) or the nearest noun
+(local). First finding (invariant side): the freeze collapses syntactic agreement like
+every other capability — a seventh capability type, with a tiny notebook (K\* ≈ 2, one
+bit of agreement) — but the invariant does not *discriminate* structure: it detects
+necessity wherever a notebook exists. What discriminates is **learnability**:
+
+- **Attention**: hierarchy is free. Even a weak model learns hierarchical = local = 1.0;
+  attention reaches any position at the same price, so non-locality costs nothing.
+- **Recurrent state bottleneck** (RSSM): hierarchy has a real price — at matched
+  configuration, ~**3× more training** to form (13,500 vs 4,500 steps at d_z = 16),
+  because carrying the subject across distractors must squeeze through the small state.
+  And it is a *speed* cost, not a capability ceiling: run long enough and even d_z = 8
+  reaches 1.0.
+- **The control that sharpens it**: an *unnatural* counting rule forms as fast as the
+  local one. The cost tracks **non-locality** — the need to maintain state — not
+  "naturalness" as such.
+
+### 6.3 What this does and does not say about impossible languages
+
+The claims at stake go back to Chomsky (1957; 1965): (1) linguistic competence is
+structured hierarchically; (2) humanly *impossible* languages — violating that
+structure — should be unlearnable, or at least harder; a claim sharpened for the LLM
+era by Moro (2016) and by Chomsky, Roberts & Watumull (2023), who asserted that
+language models learn impossible languages as easily as possible ones. Kallini et al.
+(2024) tested that assertion and found the opposite: GPT-2 learns impossible languages
+*worse*. Our contribution is a mechanistic refinement of *why*, and of *when the effect
+should vanish*: on attention, any deterministic reordering is free (consistently, our
+own scaled-down replication attempt failed instructively — bijective "impossible"
+languages like shuffles and reversals were learned *better* than natural text, because
+attention undoes bijections at no cost); the cost that exists is carried by
+architectures with a state bottleneck, and it follows non-locality, not naturalness.
+So claim (2) as usually phrased is architecture-relative: true as a *learning-speed*
+statement on state-bottlenecked learners, false on attention — and testing
+Kallini-strict (genuinely hard impossibles: non-bijective, counting-based, at GPT-2
+scale) is beyond our toys; we state it as out of scope. Claim (3) of the tradition —
+poverty of the stimulus — is untouched by anything here, deliberately.
+
 ---
 
-*Sections 6–9: see [`outline.md`](outline.md). Next to be drafted: §6 (What the
-measurement buys, and what structure costs).*
+*Sections 7–9: see [`outline.md`](outline.md). Next to be drafted: §7 (Related work),
+§8 (What we do not claim), §9 (Open fronts).*

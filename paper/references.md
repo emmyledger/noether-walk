@@ -6,6 +6,10 @@
 - Anderson, P. W. (1972). *More Is Different.* Science, 177(4047), 393–396.
 - Biderman, S., Schoelkopf, H., et al. (2023). *Pythia: A Suite for Analyzing Large
   Language Models Across Training and Scaling.* ICML 2023.
+- Chomsky, N. (1957). *Syntactic Structures.* Mouton.
+- Chomsky, N. (1965). *Aspects of the Theory of Syntax.* MIT Press.
+- Chomsky, N., Roberts, I., & Watumull, J. (2023). *Noam Chomsky: The False Promise of
+  ChatGPT.* The New York Times, March 8, 2023.
 - Elhage, N., Nanda, N., Olsson, C., et al. (2021). *A Mathematical Framework for
   Transformer Circuits.* Transformer Circuits Thread.
 - Hafner, D., Lillicrap, T., et al. (2019). *Learning Latent Dynamics for Planning from
@@ -16,8 +20,9 @@
   Vectors.* Findings of EMNLP 2023.
 - Hoogland, J., Wang, G., et al. (2024). *The Developmental Landscape of In-Context
   Learning.* arXiv:2402.02364. (Developmental interpretability; LLC over training.)
-- ◦ Kallini, J., Papadimitriou, I., Futrell, R., Mahowald, K., & Potts, C. (2024).
+- Kallini, J., Papadimitriou, I., Futrell, R., Mahowald, K., & Potts, C. (2024).
   *Mission: Impossible Language Models.* ACL 2024.
+- Moro, A. (2016). *Impossible Languages.* MIT Press.
 - Lau, E., Furman, Z., Wang, G., Murfet, D., & Wei, S. (2024). *The Local Learning
   Coefficient: A Singularity-Aware Complexity Measure.* arXiv:2308.12108. (The LLC
   estimator.)
@@ -44,5 +49,7 @@
 - Watanabe, S. (2009). *Algebraic Geometry and Statistical Learning Theory.* Cambridge
   University Press. (Singular learning theory; the RLCT.)
 - Wei, J., Tay, Y., et al. (2022). *Emergent Abilities of Large Language Models.* TMLR.
+- Xiong, R., Yang, Y., He, D., et al. (2020). *On Layer Normalization in the Transformer
+  Architecture.* ICML 2020. (Pre-LN vs post-LN.)
 - Zhang, F., & Nanda, N. (2024). *Towards Best Practices of Activation Patching in
   Language Models: Metrics and Methods.* ICLR 2024.
