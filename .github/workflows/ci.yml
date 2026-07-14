@@ -21,6 +21,16 @@ jobs:
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -e ".[dev]"
 
+      - name: Environment fingerprint (shown in the run summary)
+        run: |
+          {
+            echo "### Environment"
+            lsb_release -d
+            uname -mr
+            python --version
+            python -c "import torch, numpy; print('torch', torch.__version__, '| numpy', numpy.__version__)"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Unit tests
         run: pytest -q
 
