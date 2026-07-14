@@ -1,0 +1,23 @@
+# artifacts and outputs
+artifacts/
+outputs/
+*.pt
+*.ckpt
+*.npz
+*.log
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# local-only notes (never committed)
+*.local.md
+scratch/
