@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" role="img" aria-label="The map of the walk: the path with its landmarks, and the blank regions drawn blank">
+  <!-- paper card -->
+  <rect x="1" y="1" width="758" height="418" rx="10" fill="#FBF8F1" stroke="#D8D2C4" stroke-width="1.5"/>
+
+  <text x="380" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#3A3630">the walk, mapped — explored trail and honest blanks</text>
+
+  <!-- the winding path -->
+  <path d="M 70 360
+           C 120 340, 130 300, 170 290
+           C 215 279, 230 320, 275 315
+           C 320 310, 315 260, 355 245
+           C 395 230, 430 260, 470 250
+           C 510 240, 505 190, 545 175
+           C 580 162, 620 175, 655 160"
+        fill="none" stroke="#8A8272" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+
+  <!-- landmarks -->
+  <g fill="#4A6FA5">
+    <circle cx="70" cy="360" r="6"/>
+    <circle cx="170" cy="290" r="6"/>
+    <circle cx="275" cy="315" r="6"/>
+    <circle cx="355" cy="245" r="6"/>
+    <circle cx="470" cy="250" r="6"/>
+    <circle cx="545" cy="175" r="6"/>
+    <circle cx="655" cy="160" r="6"/>
+  </g>
+  <g font-family="Georgia, serif" font-style="italic" font-size="12" fill="#3A3630">
+    <text x="70" y="382" text-anchor="middle">the cascade &amp; the toy</text>
+    <text x="170" y="272" text-anchor="middle">borrowed brains</text>
+    <text x="275" y="337" text-anchor="middle">the anti-causal marsh</text>
+    <text x="355" y="227" text-anchor="middle">the dials (K*)</text>
+    <text x="470" y="272" text-anchor="middle">the tiers</text>
+    <text x="545" y="157" text-anchor="middle">the law 2k/3 &amp; the two machines</text>
+    <text x="655" y="182" text-anchor="middle">the race</text>
+  </g>
+  <!-- marsh hazard marks -->
+  <g stroke="#A65A4A" stroke-width="1.6" stroke-linecap="round">
+    <path d="M 258 300 q 5 -6 10 0 M 282 298 q 5 -6 10 0"/>
+  </g>
+
+  <!-- blank regions -->
+  <g fill="none" stroke="#C9C2B2" stroke-width="1.4" stroke-dasharray="4 6">
+    <ellipse cx="150" cy="120" rx="105" ry="52"/>
+    <ellipse cx="420" cy="95" rx="110" ry="45"/>
+    <ellipse cx="660" cy="300" rx="88" ry="52"/>
+    <ellipse cx="640" cy="70" rx="90" ry="38"/>
+  </g>
+  <g font-family="Georgia, serif" font-style="italic" font-size="13" fill="#8A8272" text-anchor="middle">
+    <text x="150" y="115">why 4 ?</text>
+    <text x="150" y="134">(the tiers' mechanism)</text>
+    <text x="420" y="90">the bridge ?</text>
+    <text x="420" y="109">(freeze symmetry = G)</text>
+    <text x="660" y="295">truly impossible</text>
+    <text x="660" y="313">languages ?</text>
+    <text x="640" y="66">7B and beyond ?</text>
+  </g>
+
+  <!-- compass: the method -->
+  <g transform="translate(88,205)">
+    <circle r="26" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <path d="M 0 -18 L 5 6 L 0 2 L -5 6 Z" fill="#4A6FA5"/>
+    <text x="0" y="44" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#6E6758">same gesture, same signature,</text>
+    <text x="0" y="59" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#6E6758">kill criterion first</text>
+  </g>
+
+  <!-- caption -->
+  <text x="380" y="404" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#3A3630">The blanks are the invitation. The compass is the result.</text>
+</svg>
