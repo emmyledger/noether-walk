@@ -276,6 +276,104 @@ precisely: the pre-registered kill criterion was armed, the four witnesses behav
 predicted, the verdict was re-derived from raw artifacts by independent code, and the
 result replicated on seeds chosen after the plan was frozen.
 
+## 3. The invariant
+
+### 3.1 Coverage
+
+The candidate invariant was put at risk on substrates chosen to share nothing — a toy
+physics cascade; purpose-built in-context learners in which memorization is impossible
+by construction; pretrained transformers from four architecture families, untouched by
+us; and one small transformer we trained from scratch on real code — across seven
+capability types: fresh-pair recall, induction, in-context rules (task vectors),
+rule composition, hidden-state tracking, syntactic agreement, and explicit world-model
+state maintenance.
+
+### 3.2 Installed arc: freeze at inference
+
+Representative verdicts (capability scores under the pre-registered conditions; every
+freeze row had a calibrated collapse bar, every symmetry-control row a survival bar):
+
+| substrate | capability | live | freeze | paired shadow | symmetry control |
+|---|---|---|---|---|---|
+| built toy | fresh-pair recall | 1.000 | 0.119 | collapses alike | twin without notebook: unaffected |
+| Pythia-70m | induction | 0.756 | 0.108 | 0.050 | **0.725 (survives)** |
+| GPT-2-small | induction | 0.989 | 0.001 | collapses alike | survives |
+| GPT-2-small | in-context rules | 0.652 | 0.000 | collapses alike | demo-order symmetry intact |
+| Qwen2.5-0.5B | in-context rules | 0.975 | 0.100 | 0.041 | **0.975 (survives)** |
+| OLMo-2-1B | in-context rules | 0.988 | 0.394* | 0.212 | **0.969 (survives)** |
+| toy transformer | hidden-state tracking | live | ≈16 % of live | negative | survives |
+| toy transformer | syntactic agreement | ≈1.0 | 0.70 | → chance | survives |
+| RSSM world model | state maintenance (declared z) | live | ≈0 | negative | survives |
+
+\* below its pre-registered collapse bar. The residual 0.119 on the built toy is the
+task's chance structure (1-in-8), quantified in the plan.
+
+Two structural nuances, established interventionally and developed in §4: for
+*induction*, σ carries the **addressing** (the pointer into context), not the copied
+content — hence a partial, localized collapse under per-source freezing (0.77 → 0.46)
+versus the total collapse of rules (→ 0.000), and hence σ's non-portability to foreign
+contexts. And on *hidden-state tracking*, σ (the belief estimate) is **carried forward**
+along the query path rather than reread from context — the freeze gesture must follow σ
+where it actually lives, a pre-registered adaptation, not a post-hoc rescue.
+
+### 3.3 Formation arc: freeze during training
+
+*Toy.* Under a permanent, causally-clean freeze of σ throughout training, the in-context
+capability never forms: the learning curve plateaus at chance indefinitely, while (i)
+living twins form reliably and (ii) a memorizable twin task *is* learned under the very
+same freeze — the gesture obstructs the capability, not optimization. No rerouting was
+observed: the network does not build an alternative notebook elsewhere.
+
+*Real network.* We trained a small transformer from scratch on real code, where
+induction heads form abruptly at 145–195M tokens (the onset has the documented shape).
+Under the causally-rebuilt permanent freeze (§2.4):
+
+- **Formation clause: 0/3 frozen runs formed** — max induction score ≤ 0.012 against a
+  formation bar of 0.25, observed out to **16× the living formation point** (3.2B
+  tokens). All 6 living runs formed. Matched surrogates: likewise 0/3.
+- **Calibrated discriminant clause: 0/3 exceeded the information ceiling.** From living
+  runs alone we calibrated how much local structure σ carries (0.894 ± 0.059 nats;
+  ceiling 1.012). The frozen runs' early-loss excesses (+0.149 / +0.197 / +0.207) sit
+  far *below* that ceiling: the frozen models recovered roughly three quarters of the
+  local structure through σ-free reorganization — as they are entitled to — but never
+  approached what σ carries, and never formed. The capability did not take another door.
+
+Freezing the notebook during training of a real network prevents the capability from
+ever existing. This is the costliest and strongest single result of the program; its
+stated reserve is that it covers one architecture, trained by us.
+
+### 3.4 The crossing: discovered σ vs. declared σ
+
+The two arcs above concern notebooks we had to *find*. The sharpest test of
+substrate-independence opposes two architectures with opposite ontologies for σ:
+
+- **Implicit** — a transformer trained to predict a k-state hidden process whose
+  emissions are ambiguous, so tracking a belief over states is obligatory and
+  memorization is impossible (fresh sequences). σ is the belief content *discovered* in
+  the residual stream (probe R² 0.60–0.74, localized on held-out runs beforehand).
+  Freeze: the tracking capability collapses to ≈16 % of live, below the unigram
+  baseline; shadow negative; control survives.
+- **Explicit** — a recurrent world model (RSSM) on the *same* process, whose state z is
+  σ **by construction** (R²(z→belief) 0.93–0.98). Freeze z: capability ≈ 0, shadow
+  negative — the **same signature**.
+
+One gesture, two architectures that share neither mechanism, training objective, nor
+even whether σ is an emergent object or a declared one — and the same death. This is
+the result that carries the trans-substrate thesis, and it sets up a quantitative twist
+(§4.6): the *declared* state retains the full belief geometry (K\* ≈ k−1), while the
+*discovered* notebook compresses it (K\* ≈ 2k/3).
+
+### 3.5 What "never falsified" means
+
+Every experiment above armed a pre-registered kill criterion; none fired. Across the
+program, plenty else did fire — two theoretical gates, several of our hypotheses about
+K\*, one prediction of ours about σ's internal structure (§4, §6) — which is the
+falsification machinery working as designed. The distinction matters: the *invariant*
+survived every attempt on its life; our *interpretations* around it did not always, and
+the paper reports both. The invariant also has a stated blind spot: it detects that σ is
+necessary; it does not by itself discriminate *kinds* of structure (§6 shows learnability
+does).
+
 ---
 
-*Sections 3–9: see [`outline.md`](outline.md). Next to be drafted: §3 (The invariant).*
+*Sections 4–9: see [`outline.md`](outline.md). Next to be drafted: §4 (The object).*

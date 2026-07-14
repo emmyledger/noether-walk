@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-label="The ladder of worlds: a toy cascade, a machine we built, a borrowed brain — same freeze, same collapse">
+  <!-- paper card -->
+  <rect x="1" y="1" width="758" height="358" rx="10" fill="#FBF8F1" stroke="#D8D2C4" stroke-width="1.5"/>
+
+  <!-- rising connector -->
+  <path d="M 150 268 L 320 208 M 400 178 L 570 118" stroke="#B8B2A4" stroke-width="1.5" stroke-dasharray="5 6" fill="none"/>
+
+  <!-- rung 1: cascade -->
+  <g>
+    <rect x="45" y="200" width="210" height="120" rx="8" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="150" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#3A3630">a toy cascade</text>
+    <text x="150" y="247" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#8A8272">physics; σ by construction</text>
+    <!-- organized vs not: two small motifs -->
+    <g stroke="#4A6FA5" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M 75 285 q 8 -12 16 0 q 8 12 16 0 q 8 -12 16 0"/>
+    </g>
+    <text x="97" y="308" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#4A6FA5">live: organizes</text>
+    <g stroke="#9AA0A6" stroke-width="2" stroke-linecap="round">
+      <line x1="165" y1="285" x2="215" y2="285"/>
+    </g>
+    <text x="196" y="308" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#6E6758">frozen: never does</text>
+  </g>
+
+  <!-- rung 2: built machine -->
+  <g>
+    <rect x="275" y="140" width="210" height="120" rx="8" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="380" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#3A3630">a machine we built</text>
+    <text x="380" y="187" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#8A8272">fresh pairs; no memorizing</text>
+    <!-- bars: 100 -> 12 -->
+    <rect x="315" y="200" width="60" height="14" rx="4" fill="#4A6FA5"/>
+    <text x="317" y="230" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#4A6FA5">live 100 %</text>
+    <rect x="315" y="238" width="7" height="14" rx="3" fill="#9AA0A6"/>
+    <text x="330" y="250" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#6E6758">frozen 12 %</text>
+  </g>
+
+  <!-- rung 3: borrowed brain -->
+  <g>
+    <rect x="505" y="80" width="210" height="120" rx="8" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="610" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#3A3630">a borrowed brain</text>
+    <text x="610" y="127" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#8A8272">pythia-70m, untouched by us</text>
+    <!-- bars: 76 -> 11 -->
+    <rect x="545" y="140" width="46" height="14" rx="4" fill="#4A6FA5"/>
+    <text x="547" y="170" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#4A6FA5">live 76 %</text>
+    <rect x="545" y="178" width="7" height="14" rx="3" fill="#9AA0A6"/>
+    <text x="560" y="190" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#6E6758">frozen 11 %</text>
+  </g>
+
+  <!-- caption -->
+  <text x="380" y="343" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#3A3630">Three worlds, no shared parts. The same gesture, the same collapse — and the twins never flinch.</text>
+</svg>
