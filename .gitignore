@@ -21,3 +21,4 @@ venv/
 # local-only notes (never committed)
 *.local.md
 scratch/
+artifacts*/

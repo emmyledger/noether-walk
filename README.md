@@ -39,6 +39,19 @@ registered seed, an expected runtime, and expected numbers. Reproduction comes i
 
 Details and the claim→command table: [`repro/`](repro/).
 
+### Quickstart (Tier 0)
+
+```bash
+make setup          # venv + pinned deps (CPU-only torch is enough)
+make test           # unit tests: contract, guards, toy
+make tier0          # installed arc: train the toy, freeze the notebook, watch
+make tier0-formation  # formation arc: freeze during training — it never forms
+make verdicts       # re-derive every verdict from the raw artifacts, independently
+```
+
+`make tier0` exits 0 iff the pre-registered verdict HOLDS — the same check runs
+in CI on every commit.
+
 ## Feedback
 
 Issues and Discussions are open — disagreement, replication reports, and "this breaks on

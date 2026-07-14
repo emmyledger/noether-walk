@@ -1,0 +1,31 @@
+name: tier0
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install (CPU torch)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev]"
+
+      - name: Unit tests
+        run: pytest -q
+
+      - name: Tier 0 — installed arc (freeze at inference)
+        run: python -m invariants.tier0 --arc installed --seeds 0 1 2
+
+      - name: Independent verdict re-derivation
+        run: python -m invariants.verdicts artifacts
