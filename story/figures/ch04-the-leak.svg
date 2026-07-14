@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-label="The leak: an intra-window average carries future information backwards; the tripwire that now catches it">
+  <!-- paper card -->
+  <rect x="1" y="1" width="758" height="338" rx="10" fill="#FBF8F1" stroke="#D8D2C4" stroke-width="1.5"/>
+
+  <!-- left panel: the sequence and the leak -->
+  <text x="230" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#3A3630">the accidental time machine</text>
+
+  <!-- token boxes -->
+  <g font-family="Georgia, serif" font-size="12" fill="#6E6758">
+    <rect x="60"  y="150" width="44" height="34" rx="5" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <rect x="112" y="150" width="44" height="34" rx="5" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <rect x="164" y="150" width="44" height="34" rx="5" fill="#FFFFFF" stroke="#4A6FA5" stroke-width="2.2"/>
+    <rect x="216" y="150" width="44" height="34" rx="5" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <rect x="268" y="150" width="44" height="34" rx="5" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <rect x="320" y="150" width="44" height="34" rx="5" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="82"  y="171" text-anchor="middle">…</text>
+    <text x="134" y="171" text-anchor="middle">11</text>
+    <text x="186" y="171" text-anchor="middle" fill="#4A6FA5">12</text>
+    <text x="238" y="171" text-anchor="middle">13</text>
+    <text x="290" y="171" text-anchor="middle">14</text>
+    <text x="342" y="171" text-anchor="middle">15</text>
+  </g>
+  <text x="186" y="205" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12" fill="#4A6FA5">graded here</text>
+  <text x="290" y="205" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12" fill="#A65A4A">its future</text>
+
+  <!-- the note above position 12 -->
+  <rect x="158" y="72" width="56" height="38" rx="5" fill="#FFFFFF" stroke="#4A6FA5" stroke-width="2"/>
+  <line x1="166" y1="86"  x2="206" y2="86"  stroke="#4A6FA5" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="166" y1="97"  x2="206" y2="97"  stroke="#4A6FA5" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="186" y1="110" x2="186" y2="148" stroke="#4A6FA5" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <text x="120" y="90" text-anchor="end" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#4A6FA5">the "frozen" note</text>
+
+  <!-- red leak arrows from future boxes to the note -->
+  <g fill="none" stroke="#A65A4A" stroke-width="2" stroke-linecap="round">
+    <path d="M 238 148 C 232 116, 222 100, 212 90"/>
+    <path d="M 290 148 C 278 106, 248 88, 216 82"/>
+    <path d="M 342 148 C 330 92, 268 74, 216 74"/>
+    <path d="M 212 90 l 10 1 m -10 -1 l 8 7" />
+  </g>
+  <text x="300" y="60" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#A65A4A">the window average carries</text>
+  <text x="300" y="77" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#A65A4A">the future backwards</text>
+
+  <!-- right panel: the tripwire -->
+  <g>
+    <rect x="440" y="52" width="270" height="200" rx="8" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="575" y="80" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#3A3630">the tripwire</text>
+    <!-- axes -->
+    <path d="M 470 220 L 690 220 M 470 220 L 470 96" stroke="#B8B2A4" stroke-width="1.2" fill="none"/>
+    <!-- living loss curve (blue, decreasing slowly) -->
+    <path d="M 472 110 C 520 128, 580 148, 686 160" fill="none" stroke="#4A6FA5" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="652" y="150" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#4A6FA5" text-anchor="end">living</text>
+    <!-- poisoned intervention curve (red, plunging below) -->
+    <path d="M 472 112 C 505 150, 540 195, 686 206" fill="none" stroke="#A65A4A" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="7 4"/>
+    <text x="652" y="198" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#A65A4A" text-anchor="end">"frozen" (poisoned)</text>
+    <!-- alarm at crossing -->
+    <circle cx="510" cy="155" r="4.5" fill="none" stroke="#A65A4A" stroke-width="2"/>
+    <text x="522" y="146" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#A65A4A">alarm</text>
+    <text x="575" y="242" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#3A3630">an intervention must never</text>
+  </g>
+  <text x="575" y="270" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#3A3630">beat the living run — if it does, stop everything</text>
+
+  <!-- caption -->
+  <text x="380" y="316" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="14.5" fill="#3A3630">A network in training does not ignore a leak: it finds it, and it feasts. Now a guard watches for exactly this.</text>
+</svg>

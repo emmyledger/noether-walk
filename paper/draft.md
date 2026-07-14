@@ -374,6 +374,142 @@ the paper reports both. The invariant also has a stated blind spot: it detects t
 necessary; it does not by itself discriminate *kinds* of structure (§6 shows learnability
 does).
 
+## 4. The object: what σ is, measured by intervention
+
+Having established that σ is necessary, we characterize it — always by the same
+currency: a pre-registered gesture, never a resemblance.
+
+### 4.1 Composition: separable superposition
+
+Two rules held simultaneously in one context (GPT-2-small): freezing one rule's notebook
+kills exactly *its* task (0.323 → 0.002) and spares the other (0.519 intact); freezing
+the other reverses the pattern (→ 0.000, first task spared); freezing both collapses
+everything. The result survives interleaving the demonstrations (dispersed-position
+freeze: 0.412 → 0.005, other task spared) — notebooks are not positional blocks. Two
+qualifications: competition is *soft* (freezing one slightly raises the other), and
+beyond two notebooks the test becomes non-conclusive for capacity reasons, not
+separability ones — at N ≥ 3 the *living* capability itself falls below the
+pre-registered bar (0.16 / 0.09 / 0.11 < 0.30, roughly halving per added notebook on a
+124M model). We never observed notebooks entangle; a larger model is needed to probe
+high load.
+
+### 4.2 A structured multiset, irreducible to its summaries
+
+What structure inside σ carries a rule? Two candidate reductions, both pre-registered,
+both **falsified**: replacing σ by its mean (its first order-symmetric coordinate) kills
+the capability entirely (0.000, exactly like the full freeze) — and so does keeping only
+the centered deviations (0.000). One of these was our own predicted answer; it died like
+the others. Dose–response is threshold-like: ≥ 75 % of the full σ is needed. Combined
+with the demo-order symmetry control (which survives), the picture is: the notebook of a
+rule is a **multiset** (order-invariant) that is **structured** (not reducible to low
+moments; the per-position structure is necessary).
+
+### 4.3 A clean basis: K\*, finite and linear
+
+The puzzle of §4.2 resolves in a proper basis. In a PCA basis of σ's variation, the
+notebook of a rule compresses to **K\* = 32 of 768 dimensions** at the pre-registered
+fidelity bar (full fidelity by ~128). The earlier reductions failed because they tested
+*one* coordinate — far below thirty-two, not because the object is incompressible.
+
+K\* is robust in three directions. **Across model sizes within a family**: GPT-2-small
+(d=768) and GPT-2-medium (d=1024) both give exactly 32 — the dimension belongs to the
+notebook, not the embedding width. **Across families**: Pythia-160m gives 16, same
+order. **Across function classes**: a nonlinear autoencoder compresses no further than
+PCA (K\*_nl = K\*_PCA = 32; the first autoencoder failed its sanity check and was
+amended, in writing, before any verdict was read). The notebook is essentially a *linear
+subspace*, not a curved manifold.
+
+One reading rule, to prevent a confusion we fell into ourselves: **K\* is
+notebook-specific, not universal.** In-context rules on pretrained models measure
+~O(20–32); a one-bit syntactic-agreement notebook measures ~2; a k-state belief notebook
+measures ~2k/3 (§4.6). These are different objects; comparing their K\* across tasks is
+a category error.
+
+### 4.4 Metrology: is the ruler straight?
+
+Before comparing K\* across families we attacked the measurement itself. The concern:
+PCA orders directions by *variance*, and variance might be a gauge artifact — a few
+high-variance directions irrelevant to the task could inflate K\*, or a crucial
+low-variance direction could hide. The test: re-order the same directions by
+**attribution** (content × task-sensitivity, |Σ (σ·vⱼ)(∂loss/∂(σ·vⱼ))| over the full
+pool of d directions) and re-measure. Result, on three families (in the pooled basis
+this test uses): **K\*_variance = K\*_attribution exactly** (64=64, 16=16, 8=8), with
+attribution-ordered accuracy tracking variance-ordered accuracy at every K — including
+on the outlier family. Two further gauges were checked (layer-norm folding: innocent;
+raw rank-1 variance: identified and excluded). Variance is a faithful proxy for task
+relevance here; the cross-family differences below are properties of the models, not of
+the ruler.
+
+### 4.5 Architecture sets K\*, not scale — and not capability
+
+With the ruler validated, a campaign across sizes and families:
+
+- **Qwen2.5 is flat at K\* = 16 from 0.5B to 3B** — a 6× size range moves nothing.
+- **Pythia makes a single step 16 → 32** (present already at 410m, flat after) — a
+  saturating finite-size effect, not a scaling law.
+- **OLMo-2-1B sits at K\* = 4**, confirmed on fresh seeds — a real architectural fact
+  (§4.4), not evaluation noise.
+
+K\* arranges in **tiers** (≈4 ≪ ≈16 < ≈32) set by architecture; "K\* is a universal
+constant ~O(20–32)" is hereby retracted as our own earlier over-reading. So is a second
+tempting reading: K\* does **not** track capability — the family at K\*=16 outperforms
+the family at K\*=4 on standard benchmarks. What *causes* the tiers is open, and two
+obvious candidates are dead: on purpose-built toys matched to the formation setting,
+neither the **placement** of normalization (none / pre / post: all K\*=32) nor its
+**type** (LayerNorm / RMSNorm, five variants: all 32) compresses the notebook. The
+minimal toy caps at 32 and cannot reach the low tier at all — the mechanism lives in
+properties of real architectures we have not yet isolated. Reserves: the size grid is
+coarse (tiers are robust; the numbers are intervals), and the cross-family comparison
+correlates several factors rather than isolating one.
+
+### 4.6 The first functional law: K\*(k) ≈ 2k/3, and the falsification of k−1
+
+The tiers are categorical. A *law* needs a substrate where theory predicts K\* as a
+function of a dial we control. Hidden-state tracking provides one: a k-state hidden
+process with ambiguous emissions forces the system to carry a belief over states;
+belief-state geometry predicts that belief lives on the (k−1)-simplex, so the naive
+prediction is **K\* = k−1**, with k as the dial. Sequences are fresh, so memorization is
+impossible; the number is declared before the measurement.
+
+It took four pre-registered rounds to get an answer this test could not take back:
+
+1. *Exploratory* (k = 3, 5, 9): under the pre-registered metric, K\* came out flat —
+   the prediction failed its first contact. A saturation pattern suggestively near k−1
+   was visible, recorded as a **post-hoc motif, explicitly not claimed**.
+2. *Fresh k* (4, 7, 10, 13), saturation metric pre-declared: strict monotonicity
+   appeared (and near k−1), but the round's own pre-registered sanity criterion
+   (probe R² ≥ 0.80) failed (0.52–0.71) → **formally non-conclusive**, no claim.
+3. *Deeper toy*: worse (R² 0.41–0.59) — with a mechanistic explanation that became a
+   finding (§4.7): in deep models the belief is built *across* layers, so a layer-1 σ is
+   only an early partial estimate. **The notebook migrates with depth.**
+4. *The clean round*: σ probed at the belief-complete layer, fresh k = (6, 12, 15, 18),
+   retrained. Sanity finally passed everywhere (R² 0.91–0.95) — the test could speak.
+   Verdict: **monotone, near-linear — and k−1 falsified.** K\*_sat90 = {5, 7, 9, 11},
+   strictly increasing, undershooting k−1 by a growing gap (k=18 → 11 vs 17); the slope
+   is ≈ 2/3. Replicated on a fresh seed ({5, 7, 9} at k = 9, 12, 15).
+
+The resolution of the apparent paradox is itself a result: the belief **is**
+geometrically (k−1)-dimensional (that is what the high R² says), but its predictive
+weight is front-loaded. K\* measures the *predictively load-bearing* dimension, not the
+geometric one. The control that clinches it is the explicit world model (§3.4): its
+*declared* state z gives K\* = {6, 11, 16, 16} against k−1 = {5, 11, 14, 17} — the
+declared state keeps the whole simplex; the discovered notebook compresses it. Both laws
+replicate across seeds, with explicit > implicit at every k.
+
+This is the first *functional* dependence of K\* we know of (versus the categorical
+tiers of §4.5), and it was reached by falsifying the beautiful prediction rather than
+hosting it.
+
+### 4.7 Mechanistic byproducts
+
+Two facts any reuser of the instrument needs. **Carried vs. reread**: for hidden-state
+tracking, σ is carried *forward* along the computation at the current position — not
+reread from past context as induction and rules are; freezing the reading path alone is
+not sufficient, and the correct gesture (freeze both routes) was pre-registered once
+this was understood. **Layer migration**: σ lives at layer 1 in a 2-layer model but at
+the belief-complete layer in deeper ones. Notebooks have addresses, and the addresses
+depend on architecture and depth.
+
 ---
 
-*Sections 4–9: see [`outline.md`](outline.md). Next to be drafted: §4 (The object).*
+*Sections 5–9: see [`outline.md`](outline.md). Next to be drafted: §5 (The dynamics).*
