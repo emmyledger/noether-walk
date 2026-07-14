@@ -735,7 +735,65 @@ principle (Haken, 1983), and linear notebook structure echoes the linear represe
 hypothesis (Park et al., 2023). What we add to that old and good intuition is exactly
 what it lacked: a falsifiable, portable gesture.
 
+## 8. What we do not claim
+
+The program's anti-overclaim register, verbatim in spirit:
+
+- σ is a **candidate** slow variable designated a priori and tested by a falsifiable
+  gesture — not "the" slow variable of a system, and never selected post hoc (§2.1).
+- **No nontrivial formation-linked conserved charge.** The Noether machinery applies
+  exactly (§5.4), but the verified charge is architectural; the symmetry origin of the
+  obstruction is established, a conservation law for formation is not claimed.
+- **No derivation that the freeze symmetry is the notebook's invariance group.** The
+  dimension-locks-at-formation bridge (§5.5) is a measured, replicated coincidence.
+- **K\* is neither universal nor a capability measure** (§4.5) — both were our own
+  earlier readings, and both are retracted here. K\* is task- and notebook-specific;
+  cross-task comparison of raw values is a category error (§4.3).
+- **λ̂ does not read K\*** (§5.6); no direct object↔dynamics link is claimed — the
+  established relation is co-variation through task complexity.
+- **No generalization beyond tested substrates**: inference-side results cover models
+  up to 3B parameters from four families; the real-network formation result covers one
+  small architecture trained by us; hidden-state and structure-cost results are
+  toy-scale. Strict impossible-language claims are explicitly out of scope (§6.3), as
+  is poverty of the stimulus.
+
+## 9. Open fronts
+
+Stated as invitations — the instrument travels (Tier 0 runs on a laptop; §Repro):
+
+1. **The mechanism of the K\* tiers.** What in a full-scale architecture compresses a
+   notebook to K\* = 4? Norm placement and norm type are falsified on matched toys;
+   the minimal toy cannot reach the low tier at all. The most concrete open question
+   this work produces.
+2. **The formal bridge.** Derive — or refute — that the freeze symmetry is the
+   invariance group whose dimension locks at formation. The program's theoretical core.
+3. **What would test "the landscape reads the object" properly?** λ̂↔K\* is bounded
+   (§5.6); a valid bridge needs an observable moved at fixed architecture *and* fixed
+   task complexity.
+4. **High-load separability.** Beyond two simultaneous notebooks, capacity — not
+   separability — fails first on a 124M model; a larger model settles it.
+5. **Scale.** The installed arc at 7B–72B; the formation arc on an *open-trajectory*
+   full-scale model (public checkpoints make the freeze-during-formation gesture
+   testable beyond our own training runs).
+6. **Impossible languages, strict form.** Non-bijective, counting-based impossibles at
+   GPT-2 scale — the substrate design, not compute, is the bottleneck (§6.3).
+
+The standing offer of §1: take the gesture to a substrate we never touched, arm the
+witnesses, pre-register the bar — and try to kill it.
+
+## Reproducibility statement
+
+Every claim maps to a command with a pinned environment, registered seeds, expected
+numbers, and measured runtime (repository: `repro/`, the claim→command table). Tier 0 —
+both arcs of the invariant on the toy — runs on a laptop CPU (~4 min installed arc,
+~20 min formation arc) and is re-executed in CI on every commit, together with an
+independent re-derivation of every verdict from the raw artifacts (no number in this
+paper is hard-coded). Reproduction is bit-identical at fixed platform; verdicts are the
+platform-portable claim, verified on two OS/architecture combinations. Tiers 1–2 (real
+models; the training-time results) ship artifacts plus re-derivation first, retraining
+scripts second.
+
 ---
 
-*Sections 8–9: see [`outline.md`](outline.md). Next to be drafted: §8 (What we do not
-claim), §9 (Open fronts), and the Reproducibility statement.*
+*Paper v0 complete (abstract + §1–9 + reproducibility). Next passes: numbers audit
+against re-derived verdicts as Tiers 1–2 land; figures F1–F9; LaTeX/PDF build.*
