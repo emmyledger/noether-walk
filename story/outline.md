@@ -66,7 +66,23 @@ chapter 7 predicts (declared state keeps the full geometry k−1; discovered not
 compresses to ~2k/3).
 **Figure:** the two machines side by side, one gesture, one signature.
 
-## 9. Where the trail goes cold
+## 9. What structure costs
+The Chomsky question, made mechanistic: are "impossible" languages harder for a learning
+machine? Build matched grammars — agreement with the *hierarchically correct* subject
+across nested clauses, versus the *nearest* noun — and race architectures on them. For
+**attention**, hierarchy is free: any position is one hop away, structured = local, even
+for a tiny model. For a **recurrent state bottleneck**, hierarchy has a real price —
+~3× slower to learn at matched configuration — because carrying the subject across the
+distractors must squeeze through the small state. And the twist: an *unnatural* counting
+rule forms as fast as the local one — **the cost follows non-locality, not
+"naturalness"**. The price of structure is paid in learning speed, and the architecture
+decides who pays. Plus what the dimension measurement buys in engineering: K\* predicts
+the floor of a world model's latent size (undersize it and the target is never reached;
+the sweet spot sits near ~1.4×K\*).
+**Figure:** two racers on the same grammar — attention strolling, the recurrent
+bottleneck climbing; the cost table; the latent-size floor curve.
+
+## 10. Where the trail goes cold
 What this walk does **not** claim (small models, one self-trained formation run, the
 formal bridge unproven). The open fronts, stated as invitations. And the standing offer:
 the gesture is packaged — take it to a substrate we never touched, and try to kill it.
