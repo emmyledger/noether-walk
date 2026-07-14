@@ -58,4 +58,9 @@ Issues and Discussions are open — disagreement, replication reports, and "this
 my machine" are all equally welcome. The most useful feedback of all: **an attempt to
 falsify the invariant on a substrate we didn't test.**
 
+## License
+
+Code: [MIT](LICENSE). Texts and figures (story, paper): [CC BY 4.0](LICENSE-texts.md) —
+share and adapt freely, with attribution.
+
 — Emmy Ledger
