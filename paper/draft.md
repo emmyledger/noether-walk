@@ -680,7 +680,62 @@ Kallini-strict (genuinely hard impossibles: non-bijective, counting-based, at GP
 scale) is beyond our toys; we state it as out of scope. Claim (3) of the tradition —
 poverty of the stimulus — is untouched by anything here, deliberately.
 
+## 7. Related work
+
+**Mechanistic interpretability.** Induction heads and their formation schedule were
+mapped by Olsson et al. (2022), within the circuits program of Elhage et al. (2021);
+causal interventions on activations are that field's standard tool, with mean-ablation
+and activation-patching practice codified by Wang et al. (2023) and Zhang & Nanda
+(2024). We inherit the gesture and differ in the *epistemic packaging*: every
+intervention here travels with a pre-registered kill criterion and a witness taxonomy
+(paired shadow, symmetry control, notebook-free twin), and the claim being tested is
+not a circuit description of one model but an **invariance across substrates** —
+including one crossing of the implicit↔explicit divide, and one intervention applied
+*during training* rather than at inference.
+
+**Task and function vectors.** Hendel et al. (2023) and Todd et al. (2024) showed that
+in-context rules condense into compact, transportable vectors. Our results refine
+"compact" into a measured dimension with a validated ruler (variance = attribution
+ordering, §4.4), add interventional necessity (freeze → 0.000, with witnesses), and
+characterize structure their framing leaves open: separable composition, the
+structured-multiset nature, and the architecture tiers.
+
+**Belief-state geometry and computational mechanics.** Shai et al. (2024) showed
+transformers linearly represent the belief simplex of a hidden process in their
+residual stream — a lineage running back to computational mechanics (Crutchfield &
+Young, 1989). We confirm the geometry (probe R² ≥ 0.91) and intervene on it: the
+belief-notebook is causally necessary, but the naive dimensional prediction of the
+geometric reading (K\* = k−1) is falsified — the predictively load-bearing dimension is
+≈ 2k/3, and only a *declared* state (RSSM; Hafner et al., 2019) retains the full
+simplex. Geometry present ≠ geometry load-bearing is, we believe, a useful corrective
+for regression-based readings generally.
+
+**Singular learning theory and developmental interpretability.** We use the local
+learning coefficient (Watanabe, 2009; estimator of Lau et al., 2024) as an instrument,
+in the spirit of Hoogland et al. (2024). Two contributions flow back: the freeze leaves
+a matched-loss geometric imprint (a validated pre-registered prediction, §5.2), and a
+caution — λ̂ is governed by architecture and does **not** read the notebook's dimension
+(§5.6); studies correlating λ̂ with representational quantities across tasks should
+control for shared task-complexity drivers.
+
+**Emergent abilities.** Whether large-model capability jumps are real or
+metric-induced (Wei et al., 2022; Schaeffer et al., 2023) is a question about score
+curves; ours is about mechanism, and the two meet in one sentence: at the mechanism
+level everything we measured is gradual (§5.1), while being causally all-or-nothing
+under intervention (§3). Anderson (1972) remains the framing ancestor of the whole
+question.
+
+**Impossible languages.** Positioned in §6.3 (Chomsky, 1957; 1965; Moro, 2016;
+Chomsky, Roberts & Watumull, 2023; Kallini et al., 2024): our contribution is the
+mechanistic *why* and its architecture-relativity — the cost of structure follows
+non-locality and is paid only through a state bottleneck.
+
+**Slow variables.** The write-slow/reread-fast motif is synergetics' enslaving
+principle (Haken, 1983), and linear notebook structure echoes the linear representation
+hypothesis (Park et al., 2023). What we add to that old and good intuition is exactly
+what it lacked: a falsifiable, portable gesture.
+
 ---
 
-*Sections 7–9: see [`outline.md`](outline.md). Next to be drafted: §7 (Related work),
-§8 (What we do not claim), §9 (Open fronts).*
+*Sections 8–9: see [`outline.md`](outline.md). Next to be drafted: §8 (What we do not
+claim), §9 (Open fronts), and the Reproducibility statement.*

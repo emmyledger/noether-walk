@@ -10,6 +10,8 @@
 - Chomsky, N. (1965). *Aspects of the Theory of Syntax.* MIT Press.
 - Chomsky, N., Roberts, I., & Watumull, J. (2023). *Noam Chomsky: The False Promise of
   ChatGPT.* The New York Times, March 8, 2023.
+- Crutchfield, J. P., & Young, K. (1989). *Inferring Statistical Complexity.* Physical
+  Review Letters, 63(2), 105–108. (Computational mechanics; ε-machines.)
 - Elhage, N., Nanda, N., Olsson, C., et al. (2021). *A Mathematical Framework for
   Transformer Circuits.* Transformer Circuits Thread.
 - Hafner, D., Lillicrap, T., et al. (2019). *Learning Latent Dynamics for Planning from
