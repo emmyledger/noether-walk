@@ -520,6 +520,105 @@ this was understood. **Layer migration**: σ lives at layer 1 in a 2-layer model
 the belief-complete layer in deeper ones. Notebooks have addresses, and the addresses
 depend on architecture and depth.
 
+## 5. The dynamics: how the notebook forms
+
+The formation arc (§3.3) says freezing σ during training prevents the capability from
+existing. This section asks what kind of process the freeze is interrupting.
+
+### 5.1 Formation is a gradual crossover
+
+Three pre-registered instruments, three verdicts. **No critical slowing-down**: the
+susceptibility proxy does not peak at formation — the signature of a second-order
+critical point is absent (gate NOT SUPPORTED). **No peaked conserved current**: the
+instantaneous Noether-current probe stays flat through formation, robust to refining
+the generator (NOT SUPPORTED; the obstruction exists only in integrated form, below).
+**But a real scaling law for the onset**: across five model sizes, the formation onset
+scales as t_c ~ d^-1.17 (with a threshold size that never forms and a plateau growing
+with size), and the transition rescaled by t_c collapses onto a single curve
+(SUPPORTED, nuanced: the law concerns the *onset*, not K\*). Verdict: formation is a
+**gradual crossover**, not a critical point — the metric critique of emergent-ability
+score curves (Schaeffer et al., 2023) holds one level deeper here: even the *mechanism*
+is gradual.
+
+### 5.2 The geometric anchor: the landscape sees the freeze (validated prediction #2)
+
+Singular learning theory (Watanabe, 2009) says the local geometry of the loss landscape
+carries a complexity measure — the local learning coefficient λ̂ (Lau et al., 2024;
+used developmentally by Hoogland et al., 2024). Pre-registered prediction: freezing σ
+should *impoverish* that geometry, independently of the loss level. Verdict: λ̂ of the
+living model exceeds λ̂ under the freeze; and **at matched loss** the gap persists — on
+four fresh pre-registered pairs, gaps of 324/173/162/175 against a pre-set threshold of
+50, consistent sign at all three analysis levels. The freeze's imprint on the singular
+geometry is **structural**, not a loss artifact. This is the program's second validated
+prediction.
+
+### 5.3 Grafting couples to formation (validated prediction #1)
+
+If formation builds a *reader* for the notebook, then transplanting a correct σ should
+help only once the reader exists. Verdict: the graft score is ≈0 before formation,
+rises with a gradual onset (~169M tokens — of which the abrupt prefix-matching jump at
+~210M is a late marker), and is *specific*: correct σ +0.44, scrambled −0.07, random
+−0.18. On the frozen trajectory the graft score is **0.000 everywhere**: a perfect
+notebook recovers nothing, because the reader never formed. First validated prediction
+of the program.
+
+### 5.4 The symmetry origin — and exactly how far it goes
+
+Freezing σ **enlarges the symmetry group of the loss**; formation is the breaking of
+that added symmetry. Tested dynamically: from identical pre-formation weights, gradient
+bursts under the frozen loss *dismantle* the reader (ΔQ ≤ 0, most negative near
+formation) while living bursts build it. The Noether machinery itself is exact here — a
+scale-symmetry conservation identity holds to 1e-8 (Noether, 1918, applies literally) —
+but that conserved charge is **architectural** (it holds live and frozen, on any input):
+we claim no formation-linked conserved charge, and the derivation that the freeze
+symmetry *is* the notebook's invariance group remains the program's open formal core.
+
+### 5.5 The bridge: the dimension is built at formation
+
+On the living trajectory, the notebook's dimension (the K90 of §4.3's measurement,
+tracked checkpoint by checkpoint) climbs 2 → 4 → 8 → 16 → **32** and **locks** at
+formation, stable thereafter — replicated on a fresh seed under a pre-registered
+metric (24/24 post-formation checkpoints locked). The locked value echoes the
+rules-notebook's ~32 across arcs. We report this as a **measured, replicated
+coincidence**, not a derivation — with two standing reserves: the echo compares an
+*addressing* notebook to a *content* notebook (an echo of order, not identity), and
+the capability curve itself is smooth (what locks is the dimension, not a score).
+
+### 5.6 Does the landscape read the notebook? A bridge built and bounded in one day
+
+The two arcs of measurement — K\* on activations, λ̂ on weights — invite a conjecture:
+the landscape's complexity *reads* the notebook's size.
+
+**Act 1 (prediction supported).** On the k-state family at fixed architecture, λ̂ of
+the living model grows with K\* (0.552 → 1.572 over k = 6…18; Pearson 0.86). Flagged
+reserve, pre-registered: λ̂ correlates better with k itself (0.95), and at equal K\*
+(k = 6 and k = 9 both give K\* = 5) λ̂ nearly doubles — correlation does not show that
+λ̂ *reads* K\*.
+
+**Act 2 (falsified, same day).** The implicit/explicit pair of §3.4 is exactly the
+lever the reserve demands: it moves K\* at *fixed* k (discovered notebook ≈ 2k/3,
+declared state ≈ k−1). Verdict: Δλ̂ **anti-correlates** with ΔK\* (Pearson ≈ −0.97);
+and within the recurrent model alone, K\* more than triples (5 → 18) while λ̂ stays
+flat (~0.5). **λ̂ does not read K\*.** The local learning coefficient is governed by
+the *architecture's* landscape; the notebook's dimension by the *task*; they co-vary
+only when k drags both. Act 1 is thereby reinterpreted: a k-mediated co-variation, not
+a direct link — a clean bound, reported as such. One elegant byproduct: the fingerprint
+{k=6, k=9 → same K\*, λ̂ ×2} independently confirms §4.6's split — λ̂ sits on the
+*geometric* side of the belief (~k−1), K\* on the *predictive* side (~2k/3), the same
+front-loading seen from the weights.
+
+### 5.7 What kind of process, then?
+
+The thermodynamic frame — emergence as a critical phase transition with a singularity
+and a conserved current — is **closed** for this system (§5.1, §5.4): a negative that
+eliminates a whole family of analogies. What replaces it is developmental and
+constructive: a low-dimensional, linear object that assembles gradually, whose
+dimension locks at formation (§5.5), which becomes causally load-bearing (§3), and
+whose construction is visible in the singular geometry of the loss (§5.2) as the
+gradual breaking of a symmetry (§5.4). Interventional necessity — not discontinuity —
+is the robust phenomenon.
+
 ---
 
-*Sections 5–9: see [`outline.md`](outline.md). Next to be drafted: §5 (The dynamics).*
+*Sections 6–9: see [`outline.md`](outline.md). Next to be drafted: §6 (What the
+measurement buys, and what structure costs).*

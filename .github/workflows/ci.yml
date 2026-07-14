@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-and-reproduce:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned, not 'latest': the environment is part of the claim
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4

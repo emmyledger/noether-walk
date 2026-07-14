@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-label="In the notebook's own basis, about 32 of 768 directions carry the rule; the mean alone and the deviations alone are both dead">
+  <!-- paper card -->
+  <rect x="1" y="1" width="758" height="338" rx="10" fill="#FBF8F1" stroke="#D8D2C4" stroke-width="1.5"/>
+
+  <!-- the strip of directions -->
+  <text x="380" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#3A3630">the notebook's own axes — 768 directions, ranked</text>
+  <g>
+    <!-- 32 that matter: blue segment -->
+    <rect x="70" y="66" width="86" height="26" rx="4" fill="#4A6FA5"/>
+    <!-- ~96 more to full fidelity: pale blue -->
+    <rect x="160" y="66" width="120" height="26" rx="4" fill="#C9D4E4"/>
+    <!-- the rest: packaging -->
+    <rect x="284" y="66" width="406" height="26" rx="4" fill="#EDE9DF"/>
+    <!-- tick marks to suggest dials -->
+    <g stroke="#FBF8F1" stroke-width="1.4">
+      <line x1="92" y1="66" x2="92" y2="92"/><line x1="113" y1="66" x2="113" y2="92"/><line x1="134" y1="66" x2="134" y2="92"/>
+      <line x1="190" y1="66" x2="190" y2="92"/><line x1="220" y1="66" x2="220" y2="92"/><line x1="250" y1="66" x2="250" y2="92"/>
+      <line x1="330" y1="66" x2="330" y2="92"/><line x1="380" y1="66" x2="380" y2="92"/><line x1="430" y1="66" x2="430" y2="92"/><line x1="480" y1="66" x2="480" y2="92"/><line x1="530" y1="66" x2="530" y2="92"/><line x1="580" y1="66" x2="580" y2="92"/><line x1="630" y1="66" x2="630" y2="92"/>
+    </g>
+  </g>
+  <text x="113" y="112" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#4A6FA5">K* = 32 : the rule is back</text>
+  <text x="220" y="130" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#8A8272">~128 : full fidelity</text>
+  <text x="487" y="112" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12.5" fill="#8A8272">the rest : packaging</text>
+
+  <!-- three mini-verdicts -->
+  <g font-family="Georgia, serif">
+    <rect x="70" y="170" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="160" y="198" text-anchor="middle" font-size="13.5" fill="#3A3630">the mean alone</text>
+    <text x="160" y="222" text-anchor="middle" font-style="italic" font-size="12.5" fill="#8A8272">one summary scribble</text>
+    <text x="160" y="252" text-anchor="middle" font-size="15" fill="#A65A4A">dead — 0.000</text>
+
+    <rect x="290" y="170" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#D8D2C4" stroke-width="1.5"/>
+    <text x="380" y="198" text-anchor="middle" font-size="13.5" fill="#3A3630">the deviations alone</text>
+    <text x="380" y="222" text-anchor="middle" font-style="italic" font-size="12.5" fill="#8A8272">our own prediction</text>
+    <text x="380" y="252" text-anchor="middle" font-size="15" fill="#A65A4A">dead — 0.000</text>
+
+    <rect x="510" y="170" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#4A6FA5" stroke-width="2"/>
+    <text x="600" y="198" text-anchor="middle" font-size="13.5" fill="#3A3630">top 32, right basis</text>
+    <text x="600" y="222" text-anchor="middle" font-style="italic" font-size="12.5" fill="#8A8272">the notebook's axes</text>
+    <text x="600" y="252" text-anchor="middle" font-size="15" fill="#4A6FA5">alive — above the bar</text>
+  </g>
+
+  <!-- caption -->
+  <text x="380" y="308" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="14.5" fill="#3A3630">Measure a diagonal rod with axis-aligned calipers and every axis seems occupied. Align them, and it is thin.</text>
+</svg>
