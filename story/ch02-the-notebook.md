@@ -26,7 +26,7 @@ And here is the point of the multiplication story. If someone snatches the paper
 mid-calculation, your *capability* collapses — not because your neurons got worse, but
 because the capability never lived in the fast part alone. It lived in the loop.
 
-**[figure: the loop — fast squiggles writing to a calm page, the page feeding back]**
+![The loop: fast activity writes the slow notebook, rarely; then rereads it, and steers by it](figures/ch02-the-loop.svg)
 
 ## Slow variables
 
@@ -85,7 +85,7 @@ Why this gesture and not something cruder?
   capability, you cannot blame the disturbance; there is none. Something quieter
   happened: the loop went silent.
 
-**[figure: the same page, twice — live scribbles vs. the uniform grey smear; equal ink]**
+![The freeze: the same page live and frozen — same amount of ink, zero information](figures/ch02-freeze.svg)
 
 ## The candidate invariant
 

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Two lookalike capability curves from unrelated systems">
+  <!-- paper card -->
+  <rect x="1" y="1" width="758" height="328" rx="10" fill="#FBF8F1" stroke="#D8D2C4" stroke-width="1.5"/>
+
+  <!-- left panel -->
+  <g stroke="#B8B2A4" stroke-width="1.2" fill="none">
+    <path d="M 70 250 L 340 250"/>
+    <path d="M 70 250 L 70 60"/>
+  </g>
+  <path d="M 72 244
+           C 120 243, 150 245, 185 240
+           C 215 236, 228 180, 242 120
+           C 252 82, 270 74, 300 71
+           C 315 70, 328 72, 336 70"
+        fill="none" stroke="#3A3630" stroke-width="2.6" stroke-linecap="round"/>
+  <text x="205" y="285" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#6E6758">a physical cascade, organizing</text>
+
+  <!-- the pull -->
+  <text x="380" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#8A8272">≟</text>
+
+  <!-- right panel -->
+  <g stroke="#B8B2A4" stroke-width="1.2" fill="none">
+    <path d="M 420 250 L 690 250"/>
+    <path d="M 420 250 L 420 60"/>
+  </g>
+  <path d="M 422 245
+           C 465 242, 500 244, 532 238
+           C 562 233, 574 172, 588 116
+           C 597 80, 618 73, 648 70
+           C 663 69, 678 71, 686 69"
+        fill="none" stroke="#3A3630" stroke-width="2.6" stroke-linecap="round"/>
+  <text x="555" y="285" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#6E6758">a network, learning</text>
+
+  <!-- shared caption -->
+  <text x="380" y="315" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#3A3630">quiet, quiet, quiet — click. Surely that means something?</text>
+</svg>

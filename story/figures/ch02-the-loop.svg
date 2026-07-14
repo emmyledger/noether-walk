@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Fast activity writes a slow notebook, then rereads it to steer">
+  <!-- paper card -->
+  <rect x="1" y="1" width="758" height="328" rx="10" fill="#FBF8F1" stroke="#D8D2C4" stroke-width="1.5"/>
+
+  <!-- fast activity: dense squiggles -->
+  <g fill="none" stroke="#3A3630" stroke-width="2" stroke-linecap="round">
+    <path d="M 80 120 q 12 -26 24 0 q 12 26 24 0 q 12 -26 24 0 q 12 26 24 0 q 12 -26 24 0"/>
+    <path d="M 74 158 q 10 -20 20 0 q 10 20 20 0 q 10 -20 20 0 q 10 20 20 0 q 10 -20 20 0 q 10 20 20 0"/>
+    <path d="M 84 196 q 13 -30 26 0 q 13 30 26 0 q 13 -30 26 0 q 13 30 26 0"/>
+  </g>
+  <text x="152" y="240" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#6E6758">fast activity</text>
+  <text x="152" y="260" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#8A8272">(flickers, moment to moment)</text>
+
+  <!-- the notebook -->
+  <g>
+    <rect x="490" y="82" width="180" height="140" rx="6" fill="#FFFFFF" stroke="#4A6FA5" stroke-width="2.2"/>
+    <line x1="518" y1="82" x2="518" y2="222" stroke="#C9D4E4" stroke-width="1.5"/>
+    <g stroke="#4A6FA5" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M 532 112 q 30 -5 62 0 q 20 3 40 -2"/>
+      <path d="M 532 144 q 26 4 54 0 q 24 -4 48 1"/>
+      <path d="M 532 176 q 34 -4 66 1 q 18 2 36 -1"/>
+    </g>
+  </g>
+  <text x="580" y="248" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#4A6FA5">the notebook — σ</text>
+  <text x="580" y="268" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#8A8272">(slow, persistent)</text>
+
+  <!-- writes arrow (top) -->
+  <path d="M 260 108 C 330 62, 420 62, 484 96" fill="none" stroke="#3A3630" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 484 96 l -14 -4 m 14 4 l -6 -13" fill="none" stroke="#3A3630" stroke-width="2" stroke-linecap="round"/>
+  <text x="372" y="58" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#3A3630">writes — rarely</text>
+
+  <!-- steers arrow (bottom) -->
+  <path d="M 486 208 C 420 258, 330 258, 264 216" fill="none" stroke="#4A6FA5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 264 216 l 14 3 m -14 -3 l 7 12" fill="none" stroke="#4A6FA5" stroke-width="2" stroke-linecap="round"/>
+  <text x="375" y="288" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#4A6FA5">rereads — and steers by it</text>
+
+  <text x="380" y="316" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#3A3630">The loop: the capability lives in neither half. It lives here.</text>
+</svg>

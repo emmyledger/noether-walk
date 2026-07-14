@@ -17,7 +17,7 @@ makes clumsy, local guesses. Then, rather suddenly, it *gets* something — it s
 using what appeared earlier in its input to shape what it says next. A new skill exists
 that wasn't there before.
 
-**[figure: the two curves side by side, unlabeled — the reader should feel the pull]**
+![Two lookalike capability curves from unrelated systems — quiet, quiet, quiet, click](figures/ch01-two-curves.svg)
 
 Put them side by side and something in you leans forward. *It's the same shape.* Two
 systems with nothing in common — no shared parts, no shared scale, no shared equations —
