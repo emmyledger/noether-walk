@@ -1,0 +1,16 @@
+# pandoc defaults for the paper PDF (used by .github/workflows/paper.yml)
+pdf-engine: xelatex
+table-of-contents: true
+number-sections: true
+metadata:
+  title: "Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates"
+  author: "Emmy Ledger"
+  date: "July 2026 — living draft"
+variables:
+  geometry: margin=1.1in
+  fontsize: 11pt
+  mainfont: "DejaVu Serif"
+  monofont: "DejaVu Sans Mono"
+  colorlinks: true
+  linkcolor: NavyBlue
+  urlcolor: NavyBlue

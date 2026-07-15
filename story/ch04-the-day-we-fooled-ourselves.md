@@ -21,9 +21,13 @@ The early numbers came back astonishing.
 
 ## Too good — on the wrong side
 
-One frozen run was learning with an early loss of **2.59** where its living twin sat at
-**10.6**. A shadow run finished at a loss almost indistinguishable from zero — a figure
-that a network this small has no honest way of reaching on real code.
+One frozen run was learning with an early loss of **2.59** — and when we evaluated
+*that very same model* through the honest, living lens, it read **10.6**. It had not
+learned the language at all; it had learned something else, visible only through the
+leaky lens it was trained under. A shadow run finished at a loss almost
+indistinguishable from zero — a figure that a network this small has no honest way of
+reaching on real code. And at matched budget, interventions were beating living runs —
+the exact symptom the tripwire now watches for.
 
 Read that again, because it is the exact opposite of what our own hypothesis predicted.
 The interventions weren't failing to form. They were **beating the living runs**. If

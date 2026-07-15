@@ -10,25 +10,23 @@ on:
 jobs:
   build-pdf:
     runs-on: ubuntu-24.04
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build PDF (pandoc + xelatex)
-        uses: docker://pandoc/extra:3.5
-        with:
-          args: >-
-            paper/draft.md paper/references.md
+      - name: Install pandoc + xelatex
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q pandoc texlive-xetex \
+            texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended fonts-dejavu lmodern
+
+      - name: Build PDF
+        run: |
+          pandoc paper/draft.md paper/references.md \
+            --defaults paper/pdf.yaml \
             -o freezing-the-notebook.pdf
-            --pdf-engine=xelatex
-            --toc --number-sections
-            -V geometry:margin=1.1in
-            -V fontsize=11pt
-            -V mainfont=DejaVuSerif
-            -V colorlinks=true
-            -V linkcolor=NavyBlue
-            --metadata title="Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates"
-            --metadata author="Emmy Ledger"
-            --metadata date="July 2026 — living draft"
+          ls -la freezing-the-notebook.pdf
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
