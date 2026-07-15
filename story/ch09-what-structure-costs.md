@@ -88,7 +88,9 @@ and we say so rather than stretch.
 Structure's cost was about *learning*. The notebook's dimension also prices *design*.
 On the world models of chapter 8, we asked: how small can the declared state z be? The
 floor result is clean: **latents sized below K\* never reach the target at any budget
-we tried**, and the cost-to-target curve bottoms out near 1.4×K\*.
+we tried**, and the cost-to-target curve bottoms out modestly above K\* — by a
+multiplier that refuses to be a constant (from just above 1× to ~2.8× across our
+range).
 
 For one draft of this chapter, we believed the practical sentence was "measure the
 notebook, then size the container." Then we did to that sentence what the walk does to

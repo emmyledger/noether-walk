@@ -631,12 +631,14 @@ If K\* measures the predictively load-bearing dimension of a notebook, it should
 the size of a latent one *designs*. Test, on the explicit world model (k = 12 hidden
 states, K\*(declared) ≈ 11): sweep the latent size d_z and measure FLOPs-to-target.
 Latents **below K\*** (d_z = 6, 9) **never reach the target**; d_z ≥ 12 do. The
-cost-to-target curve has a trough near d_z = 16 (~1.4×K\*); gross oversizing
+cost-to-target curve has a trough near d_z = 16 (~1.4×K\* at k = 12); gross oversizing
 (d_z = 192) costs 5.5× — though only 1.36× against a moderately-sized baseline
 (d_z = 48): the economy factor depends on how naive the baseline is, and we report it
 that way. Sweeping k = 6…18: the **floor scales with k** (≈k to 1.5k) and so does the
-trough (9 → 16 → 24 → 48), while the economy factor honestly *decreases* (8.3× → 3.1×,
-large only when the fixed default is absurdly oversized).
+trough (9 → 16 → 24 → 48) — though the trough-to-K\* ratio itself drifts (from just
+above 1× to ~2.8×), so no single multiplier deserves quoting — while the economy factor
+honestly *decreases* (8.3× → 3.1×, large only when the fixed default is absurdly
+oversized).
 
 **Tempered by a fair adversary (pre-registered).** The factors above price the
 measurement at zero and the alternative as naive; billing honestly reverses the fine

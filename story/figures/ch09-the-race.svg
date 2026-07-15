@@ -53,7 +53,7 @@
   <!-- cost curve: high just above the floor, trough near 1.4 K*, rising when oversized -->
   <path d="M 532 105 C 548 160, 560 192, 578 198 C 615 208, 668 172, 705 122" stroke="#3A3630" stroke-width="2.4" fill="none"/>
   <circle cx="578" cy="198" r="5" fill="#4A6FA5"/>
-  <text x="578" y="225" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#4A6FA5">trough ≈ 1.4×K*</text>
+  <text x="578" y="225" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#4A6FA5">trough : modestly above K*</text>
   <text x="648" y="105" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#8A8272">oversized : wasteful — yet a sensible</text>
   <text x="648" y="120" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11.5" fill="#8A8272">default is hard to beat</text>
 
