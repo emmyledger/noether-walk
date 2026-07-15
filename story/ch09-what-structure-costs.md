@@ -62,7 +62,14 @@ counting should be slow too. It formed **as fast as the local rule**.
 
 So the cost does not follow naturalness. It follows **non-locality** — the need to
 maintain state across intervening material — and it is paid only by architectures that
-bottleneck state. The Chomskyan "impossible ≈ possible" claim turns out to be
+bottleneck state.
+
+The dimension-ruler adds a negative of its own here — pre-registered, and lost: we
+predicted the hierarchical notebook would be *bigger* than the local one. Measured on
+matched grammars: **exactly equal**, three seeds each. The size of what is carried (one
+bit of agreement) does not remember how it was computed. Structure lives in the
+*routing* — which noun gets to write — and it is the shadow witness, not the ruler,
+that sees routing. The Chomskyan "impossible ≈ possible" claim turns out to be
 **architecture-relative**: true on attention (where structure is free), false on
 recurrent machines (where it shows as learning speed) — and in *speed*, not
 possibility, which is also the shape of Kallini's original findings.
@@ -74,16 +81,27 @@ reordering for free, exactly as the race predicts. Genuinely hard impossibles ne
 counting and unbounded memory, at real scale; that substrate design is beyond our toys,
 and we say so rather than stretch.
 
-## What the ruler buys, while we're here
+## What the ruler buys — less than we hoped, and we checked
 
 Structure's cost was about *learning*. The notebook's dimension also prices *design*.
 On the world models of chapter 8, we asked: how small can the declared state z be? The
-answer is the most practical sentence in this walk: **K\* predicts the floor.**
-Latents sized below K\* never reach the target at any budget we tried; the
-cost-to-target curve bottoms out near **1.4×K\***; and gross overprovisioning wastes a
-factor we report honestly (3–8×, large only against a naive default). Measure the
-notebook first, then size the container: the interventional number is an engineering
-number.
+floor result is clean: **latents sized below K\* never reach the target at any budget
+we tried**, and the cost-to-target curve bottoms out near 1.4×K\*.
+
+For one draft of this chapter, we believed the practical sentence was "measure the
+notebook, then size the container." Then we did to that sentence what the walk does to
+every sentence: hired a fair adversary and pre-registered the bar. The adversary is an
+engineer who skips all measuring and fixes one sensible default size, forever. Verdict:
+*measure-then-size* — with the measurement honestly billed — costs **1.34× more** than
+the sensible default across our whole task range; even an oracle handed the ideal size
+for free wins by only 1.23×; and our earlier "3–8× saved" was real but scored against
+an absurdly oversized default — a strawman, hereby retired.
+
+What survives the adversary is the floor: **K\* tells you where failure is certain, not
+where the optimum sits.** Measuring would pay only where no single default can cover
+the task range (the floor grows with the task, so such ranges exist) or where the
+measurement comes free. A ruler that knows exactly what it is for — and what it is not
+— is worth more than a ruler we oversell.
 
 ---
 
@@ -91,7 +109,10 @@ number.
 capacity claim would have been far stronger — and false; the long runs killed that
 reading before we could be tempted by it). **What *did* fail:** our scaled-down
 impossible-languages substrate — instructively, in the exact direction the mechanism
-predicts.
+predicts. And two of our own pre-registered predictions in this chapter's ledger: that
+K\* would distinguish hierarchical from local (it does not — payload, not computation),
+and that fine right-sizing would beat a sensible default (it does not, once the
+measurement is billed). The floor survived both adversaries.
 
 *Notes for the curious.* The hierarchy claims are Chomsky (1957; 1965); the modern
 "impossible languages" framing is Moro (2016); the assertion that LLMs learn impossible

@@ -92,9 +92,13 @@ maps to a runnable command.
   (λ̂ side, ~k−1) from the predictive one (K\*, ~2k/3).
 
 ## 6. What the measurement buys (and what structure costs)
-- Engineering value of K\*: it predicts the floor of a world model's latent size; cost
-  trough near ~1.4×K\*; the floor scales with k; economy factor honest (~3–8×, depends
-  on baseline naivety). Proof of concept, not an energy law.
+- Engineering value of K\*: the FLOOR of a designed latent (below K\*, failure at every
+  budget), scaling with k; cost trough near ~1.4×K\*. **TEMPERED (fair-baseline test)**:
+  measure-then-size loses 1.34× to a sensible fixed default once the measurement is
+  billed; oracle gains only 1.23×; the 3–8× factors were vs a strawman default —
+  retired. The floor bound is the surviving claim. Also: **K\* is blind to structure**
+  (matched grammars: K\* hierarchical = local; payload, not computation; routing is
+  caught by the shadow, not the ruler).
 - Cost of structure follows **non-locality, not naturalness**, and is paid only by
   architectures with a state bottleneck (recurrent ~3× slower to learn hierarchy;
   attention gets it free) — a mechanistic refinement of the impossible-languages

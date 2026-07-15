@@ -123,10 +123,11 @@ The invariant then becomes an instrument, and the rest of the paper is what it m
   landscape at matched loss (local learning coefficient), a **pre-registered
   prediction** validated on fresh runs — as was a second prediction, that σ-grafting
   only works once formation has built the reader.
-- **The price of structure, and what the measurement buys** (§6). K\* predicts the
-  floor of a world model's latent size (with a cost trough near ~1.4×K\*), and the cost
-  of maintaining non-local structure is paid only by architectures that bottleneck
-  state — a mechanistic refinement of the impossible-languages debate.
+- **The price of structure, and what the measurement buys** (§6). K\* bounds the
+  *floor* of a designed latent — below it, failure at every budget tried — though the
+  finer right-sizing claim is tempered by a fair-baseline test (§6.1); and the cost of
+  maintaining non-local structure is paid only by architectures that bottleneck state —
+  a mechanistic refinement of the impossible-languages debate.
 
 ### 1.4 Relation to the emergence literature
 
@@ -635,9 +636,21 @@ cost-to-target curve has a trough near d_z = 16 (~1.4×K\*); gross oversizing
 (d_z = 48): the economy factor depends on how naive the baseline is, and we report it
 that way. Sweeping k = 6…18: the **floor scales with k** (≈k to 1.5k) and so does the
 trough (9 → 16 → 24 → 48), while the economy factor honestly *decreases* (8.3× → 3.1×,
-large only when the fixed default is absurdly oversized). This is a proof of concept on
-a toy — an interventional dimension you can measure is a floor you don't have to guess —
-not an energy law for AI.
+large only when the fixed default is absurdly oversized).
+
+**Tempered by a fair adversary (pre-registered).** The factors above price the
+measurement at zero and the alternative as naive; billing honestly reverses the fine
+verdict. A *measure-then-size* strategy (dedicated pilot → measure K\* → size to
+~1.4×K\* → train) costs **1.34× more** than an engineer who fixes one sensible default
+(d_z = 48) forever, summed over k = 6…18; even an **oracle** handed the ideal size for
+free beats that default by only 1.23×; and the 3–8× savings were real but scored
+against an absurd default (192) — a strawman, retired here as an engineering claim.
+What survives is the **floor**: below K\*, failure at every budget tried — and the
+floor *scales with the task* (≈ k to 1.5k), so K\* would earn its measurement cost
+exactly where no single default can cover the task range, or where the measurement
+rides free on runs already needed. The honest summary: **an interventional dimension
+bounds where failure is certain, not where the optimum sits** — a floor you don't have
+to guess, not an energy law, and not a sizing oracle.
 
 ### 6.2 The cost of structure follows non-locality, and the architecture decides who pays
 
@@ -645,9 +658,16 @@ The Chomskyan question, made mechanistic: does *hierarchical* structure cost a l
 anything? Substrate: matched grammars where agreement must track either the
 hierarchically correct subject across nested clauses (non-local) or the nearest noun
 (local). First finding (invariant side): the freeze collapses syntactic agreement like
-every other capability — a seventh capability type, with a tiny notebook (K\* ≈ 2, one
-bit of agreement) — but the invariant does not *discriminate* structure: it detects
-necessity wherever a notebook exists. What discriminates is **learnability**:
+every other capability — a seventh capability type, with a tiny notebook (~1–2
+dimensions: essentially the agreement bit) — but the invariant does not *discriminate*
+structure: it detects necessity wherever a notebook exists. A second pre-registered
+negative sharpens this: on matched grammars, **K\*(hierarchical) = K\*(local) exactly**
+(three seeds each) — **K\* measures the payload carried, not the computation that fills
+it.** The agreement notebook is the same one bit whether the correct subject was
+tracked across an embedded distractor or read off at a fixed distance; what differs is
+the *routing* — which noun gets to write into σ — and routing is precisely what the
+paired shadow catches (collapse to chance in both grammars). So neither the invariant
+nor K\* discriminates structure. What discriminates is **learnability**:
 
 - **Attention**: hierarchy is free. Even a weak model learns hierarchical = local = 1.0;
   attention reaches any position at the same price, so non-locality costs nothing.
@@ -749,6 +769,12 @@ The program's anti-overclaim register, verbatim in spirit:
 - **K\* is neither universal nor a capability measure** (§4.5) — both were our own
   earlier readings, and both are retracted here. K\* is task- and notebook-specific;
   cross-task comparison of raw values is a category error (§4.3).
+- **K\* is not a structure discriminator** (§6.2): matched hierarchical and local
+  grammars distill notebooks of identical dimension — K\* measures payload, not
+  computation; our pre-registered prediction to the contrary was falsified.
+- **No net engineering gain from fine right-sizing** (§6.1): with the measurement
+  honestly billed, measure-then-size loses to a sensible fixed default; the surviving
+  engineering claim is the floor bound only.
 - **λ̂ does not read K\*** (§5.6); no direct object↔dynamics link is claimed — the
   established relation is co-variation through task complexity.
 - **No generalization beyond tested substrates**: inference-side results cover models
