@@ -30,7 +30,9 @@ is *which* noun. The **hierarchical** grammar picks the structurally correct sub
 across nested clauses ("the key to the cabinets... *is*"); the **local** grammar picks
 the nearest noun. First finding, for the invariant's ledger: the freeze kills syntactic
 agreement like everything else — a seventh capability type, with the smallest notebook
-yet (K\* ≈ 2, essentially one bit of agreement plus an address).
+yet: **K\* = 1**, a single direction — one bit of agreement (singular/plural), three
+seeds. Which noun gets to write that bit is not a second dimension; it is what the
+shadow witness catches, not the ruler — as the twist below makes precise.
 
 But on the *cost* question, our little attention toy shrugged: it learned both grammars
 trivially, same speed, same everything. Not a verdict — a lesson about substrates:
