@@ -1,0 +1,43 @@
+name: paper-pdf
+
+on:
+  push:
+    branches: [main]
+    paths: ["paper/**", ".github/workflows/paper.yml"]
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build PDF (pandoc + xelatex)
+        uses: docker://pandoc/extra:3.5
+        with:
+          args: >-
+            paper/draft.md paper/references.md
+            -o freezing-the-notebook.pdf
+            --pdf-engine=xelatex
+            --toc --number-sections
+            -V geometry:margin=1.1in
+            -V fontsize=11pt
+            -V mainfont=DejaVuSerif
+            -V colorlinks=true
+            -V linkcolor=NavyBlue
+            --metadata title="Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates"
+            --metadata author="Emmy Ledger"
+            --metadata date="July 2026 — living draft"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: freezing-the-notebook-pdf
+          path: freezing-the-notebook.pdf
+
+      - name: Attach to release (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: freezing-the-notebook.pdf

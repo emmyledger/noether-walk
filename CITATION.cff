@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use or discuss this work, please cite it as below."
+title: "Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates"
+authors:
+  - family-names: "Ledger"
+    given-names: "Emmy"
+date-released: 2026-07-14
+year: 2026
+url: "https://github.com/emmyledger/noether-walk"
+repository-code: "https://github.com/emmyledger/noether-walk"
+license: MIT
+keywords:
+  - interpretability
+  - interventional invariants
+  - slow variables
+  - reproducibility
+  - transformers
+  - world models
+abstract: >-
+  One gesture — freezing the slow variable a system writes and rereads (the
+  "notebook") — collapses the capability it carries, and, applied during training,
+  prevents the capability from ever forming. Tested with pre-registered kill criteria
+  across a toy physics cascade, purpose-built in-context learners, and pretrained
+  transformers from four families, over seven capability types, crossing the
+  implicit/explicit divide. Includes an interventional metrology of the notebook's
+  dimension, its laws and their public corrections, and a tiered reproduction harness
+  (the core result reruns on a laptop in minutes, and in CI on every commit).

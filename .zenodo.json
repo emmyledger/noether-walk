@@ -1,0 +1,20 @@
+{
+  "title": "Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates",
+  "creators": [
+    {
+      "name": "Ledger, Emmy"
+    }
+  ],
+  "description": "One gesture — freezing the slow variable a system writes and rereads (the 'notebook') — collapses the capability it carries, and, applied during training, prevents the capability from ever forming. Tested with pre-registered kill criteria across substrates (toy physics cascade, purpose-built in-context learners, pretrained transformers from four families), over seven capability types, crossing the implicit/explicit divide. Ships an interventional metrology of the notebook's dimension, its laws and their public corrections, a pedagogical companion ('A Walk with Emmy Noether'), and a tiered reproduction harness: the core result reruns on a laptop in minutes and in CI on every commit.",
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "interpretability",
+    "interventional invariants",
+    "slow variables",
+    "reproducibility",
+    "transformers",
+    "world models",
+    "singular learning theory"
+  ]
+}

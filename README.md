@@ -1,6 +1,13 @@
 # noether-walk
 
+[![tier0](https://github.com/emmyledger/noether-walk/actions/workflows/ci.yml/badge.svg)](https://github.com/emmyledger/noether-walk/actions/workflows/ci.yml)
+[![paper-pdf](https://github.com/emmyledger/noether-walk/actions/workflows/paper.yml/badge.svg)](https://github.com/emmyledger/noether-walk/actions/workflows/paper.yml)
+
 > *Same gesture, same signature — and a kill criterion written down before every step.*
+
+**This is a living repository.** Calculations are still landing: corrections arrive as
+dated signposts in the chapters and as postcards in the
+[epilogue](story/epilogue-postcards.md) — the ones that catch us go at the top.
 
 This repository is a walk. Not a hunt for "emergence" — a walk guided by Emmy Noether's
 oldest lesson: **if you want to understand a system, look for what stays the same while
@@ -52,11 +59,18 @@ make verdicts       # re-derive every verdict from the raw artifacts, independen
 `make tier0` exits 0 iff the pre-registered verdict HOLDS — the same check runs
 in CI on every commit.
 
-## Feedback
+## Feedback — and how to try to kill this
 
 Issues and Discussions are open — disagreement, replication reports, and "this breaks on
 my machine" are all equally welcome. The most useful feedback of all: **an attempt to
-falsify the invariant on a substrate we didn't test.**
+falsify the invariant on a substrate we didn't test.** The protocol, what counts as a
+kill, and the pre-registration template: [`FALSIFY.md`](FALSIFY.md). A clean
+falsification will be posted in the epilogue louder than any confirmation.
+
+## Cite
+
+See [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button uses it).
+A versioned, DOI-stamped archive of each release is planned via Zenodo.
 
 ## License
 
