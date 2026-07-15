@@ -432,7 +432,7 @@ subspace*, not a curved manifold.
 
 One reading rule, to prevent a confusion we fell into ourselves: **K\* is
 notebook-specific, not universal.** In-context rules on pretrained models measure
-~O(20–32); a one-bit syntactic-agreement notebook measures ~2; a k-state belief notebook
+~O(20–32); a one-bit syntactic-agreement notebook measures 1 (§6.2); a k-state belief notebook
 measures ~2k/3 (§4.6). These are different objects; comparing their K\* across tasks is
 a category error.
 
@@ -603,7 +603,10 @@ and within the recurrent model alone, K\* more than triples (5 → 18) while λ�
 flat (~0.5). **λ̂ does not read K\*.** The local learning coefficient is governed by
 the *architecture's* landscape; the notebook's dimension by the *task*; they co-vary
 only when k drags both. Act 1 is thereby reinterpreted: a k-mediated co-variation, not
-a direct link — a clean bound, reported as such. One elegant byproduct: the fingerprint
+a direct link — a clean bound, reported as such. Both acts — and both K\*(k) laws —
+have since been consolidated across **three seeds**, the fresh two run on two different
+machines, with the intra-RSSM flatline holding on every seed (λ̂ growth < 2× while K\*
+triples): the single-seed reserve is lifted. One elegant byproduct: the fingerprint
 {k=6, k=9 → same K\*, λ̂ ×2} independently confirms §4.6's split — λ̂ sits on the
 *geometric* side of the belief (~k−1), K\* on the *predictive* side (~2k/3), the same
 front-loading seen from the weights.
