@@ -67,6 +67,10 @@ falsify the invariant on a substrate we didn't test.** The protocol, what counts
 kill, and the pre-registration template: [`FALSIFY.md`](FALSIFY.md). A clean
 falsification will be posted in the epilogue louder than any confirmation.
 
+*Even this repository's own reception runs under the walk's rules: a pre-registered
+experiment, its instrument, and its honest closure live in [`meta/`](meta/). However
+you got here, the referrer ledger is curious about you.*
+
 ## Cite
 
 See [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button uses it).

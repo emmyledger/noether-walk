@@ -1,20 +1,32 @@
 {
   "title": "Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
   "creators": [
     {
       "name": "Ledger, Emmy"
     }
   ],
-  "description": "One gesture — freezing the slow variable a system writes and rereads (the 'notebook') — collapses the capability it carries, and, applied during training, prevents the capability from ever forming. Tested with pre-registered kill criteria across substrates (toy physics cascade, purpose-built in-context learners, pretrained transformers from four families), over seven capability types, crossing the implicit/explicit divide. Ships an interventional metrology of the notebook's dimension, its laws and their public corrections, a pedagogical companion ('A Walk with Emmy Noether'), and a tiered reproduction harness: the core result reruns on a laptop in minutes and in CI on every commit.",
-  "license": "MIT",
-  "upload_type": "software",
+  "description": "<p>An interventional invariant of capability formation, tested across toy physics, purpose-built mini-networks, and pretrained transformers (GPT-2, Pythia, Qwen2.5, OLMo-2).</p><p>Define an invariant as a triplet <em>(gesture, signature, kill criterion)</em>: an intervention performable identically across substrates, a predicted effect, and a pre-registered outcome that would falsify the claim. The candidate tested here: <strong>freezing &sigma;, the slow variable a system writes and rereads (its \"notebook\"), collapses the capability that &sigma; carries</strong> &mdash; at inference for an installed capability, and, applied during training, it prevents the capability from ever forming. Across seven capability types and one crossing of the implicit&harr;explicit divide, the invariant was never falsified. Several of the authors' own hypotheses were, and are reported alongside a training-time causality artifact that was discovered, fixed, and is now guarded against automatically.</p><p>Two doors: a non-technical walk in ten chapters, and a formal paper. Every claim maps to a runnable command with a pinned environment and registered seeds; the core collapse runs on a laptop in minutes.</p><p>Code is MIT; texts and figures are CC BY 4.0.</p>",
   "keywords": [
-    "interpretability",
-    "interventional invariants",
-    "slow variables",
+    "interventional invariant",
+    "capability formation",
+    "mechanistic interpretability",
+    "slow variable",
+    "pre-registration",
+    "falsification",
     "reproducibility",
     "transformers",
     "world models",
     "singular learning theory"
+  ],
+  "notes": "Published under a pseudonym by choice. Please do not add ORCID, affiliation, or contributor metadata to this record without reading meta/discovery-preregistration.md in the repository first: this file is deliberately free of identifying fields.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/emmyledger/noether-walk",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ]
 }

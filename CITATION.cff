@@ -1,10 +1,13 @@
 cff-version: 1.2.0
-message: "If you use or discuss this work, please cite it as below."
+message: "If you use this work, please cite it as below. If you falsify it, please open an issue — that is worth more to us than the citation."
 title: "Freezing the Notebook: An Interventional Invariant of Capability Formation Across Substrates"
 authors:
   - family-names: "Ledger"
     given-names: "Emmy"
-date-released: 2026-07-14
+# No ORCID and no affiliation: this work is published under a pseudonym, deliberately.
+# Do not add identifying metadata here without reading meta/discovery-preregistration.md.
+version: 1.0.0
+date-released: 2026-07-15
 year: 2026
 url: "https://github.com/emmyledger/noether-walk"
 repository-code: "https://github.com/emmyledger/noether-walk"

@@ -1,0 +1,48 @@
+name: traffic-ledger
+
+# GitHub discards traffic data after 14 days. This job is the only thing standing
+# between the discovery experiment and an empty record.
+# See meta/discovery-preregistration.md.
+
+on:
+  schedule:
+    - cron: "17 3 * * *"  # daily; the window is 14 days, so a few misses are survivable
+  workflow_dispatch:
+
+permissions:
+  contents: write        # to commit the ledger
+  # NB: the traffic API needs push-level access on the API TOKEN side; the workflow
+  # permission block cannot grant it. If the default GITHUB_TOKEN 403s, set the
+  # TRAFFIC_TOKEN secret (fine-grained PAT of THIS repo's account, Administration: read).
+
+concurrency:
+  group: traffic-ledger
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Snapshot the traffic window
+        env:
+          # TRAFFIC_TOKEN (a PAT belonging to THIS repository's account) takes
+          # precedence: whether the default GITHUB_TOKEN satisfies the traffic API's
+          # push-access requirement is unverified. If this step fails 403, set that
+          # secret. Never use a token from another account -- see the pre-registration.
+          GITHUB_TOKEN: ${{ secrets.TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 meta/traffic_snapshot.py | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the ledger if it moved
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add meta/traffic/ledger.json
+          if git diff --staged --quiet; then
+            echo "ledger unchanged" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m "traffic ledger: $(date -u +%Y-%m-%d)"
+          git push
