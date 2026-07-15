@@ -658,8 +658,9 @@ The Chomskyan question, made mechanistic: does *hierarchical* structure cost a l
 anything? Substrate: matched grammars where agreement must track either the
 hierarchically correct subject across nested clauses (non-local) or the nearest noun
 (local). First finding (invariant side): the freeze collapses syntactic agreement like
-every other capability — a seventh capability type, with a tiny notebook (~1–2
-dimensions: essentially the agreement bit) — but the invariant does not *discriminate*
+every other capability — a seventh capability type, with the smallest notebook
+measured in this program (**K\* = 1** on the matched grammars, three seeds each; an
+earlier, easier agreement grammar read ≈2) — but the invariant does not *discriminate*
 structure: it detects necessity wherever a notebook exists. A second pre-registered
 negative sharpens this: on matched grammars, **K\*(hierarchical) = K\*(local) exactly**
 (three seeds each) — **K\* measures the payload carried, not the computation that fills
