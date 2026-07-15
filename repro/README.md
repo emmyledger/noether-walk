@@ -34,7 +34,7 @@ make verdicts         # independent re-derivation from the raw artifacts
 | C3 formation arc, real network 0/3 | §3.3 | *(Tier 2)* | — | — | — |
 | C4 K\* metrology (variance = attribution) | §4.4 | *(Tier 1)* | — | — | — |
 | C5 architecture tiers 4/16/32 | §4.5 | *(Tier 1)* | — | — | — |
-| C6 K\*(k) ≈ 2k/3, k−1 falsified | §4.6 | *(Tier 2)* | — | — | — |
+| C6 K\*(k) ≈ k/2 (8 values of k; first fit 2k/3 corrected), k−1 falsified | §4.6 | *(Tier 2)* | — | — | — |
 | C7 implicit↔explicit same signature | §3.4 | *(Tier 2)* | — | — | — |
 | C8 LLC results (incl. the λ̂/K\* decoupling) | §5 | *(Tier 2)* | — | — | — |
 | C9 latent floor (right-sizing tempered vs fair baseline; K\* blind to structure) | §6 | *(Tier 2)* | — | — | — |

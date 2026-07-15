@@ -20,7 +20,8 @@ didn't.
 **The object got measured.** Notebooks are tiny (4–32 dimensions in containers of
 hundreds), linear, separably composable, irreducible to summaries — and their size is
 set by architecture in tiers no one can yet explain, while on state-tracking tasks it
-follows the first functional law of this program, K\* ≈ 2k/3: capability leans on a
+follows the first functional law of this program, K\* ≈ k/2 — a coefficient the walk
+itself corrected once, in public (chapter 7's signpost): capability leans on a
 compressed core of the geometry it carries.
 
 **The dynamics got a shape.** Formation is gradual at the mechanism level — no critical
@@ -92,4 +93,6 @@ the number 32, but the habit. It travels better than any result it produced.
 
 *The formal statement of everything above, with the numbers and their reservations:
 [`paper/draft.md`](../paper/draft.md). The commands that regenerate it all:
-[`repro/`](../repro/). — E.L.*
+[`repro/`](../repro/). And because a walk doesn't end when its story does: the verdicts
+that arrived after publication — including the ones that caught us — are posted in
+[the epilogue](epilogue-postcards.md). — E.L.*

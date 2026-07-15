@@ -63,25 +63,45 @@ passed everywhere. For the first time in four rounds, the test had standing.
 
 Verdict: there **is** a law — K\* climbs strictly with k (5, 7, 9, 11), near-linearly,
 replicated on fresh seeds. And it is **not k−1**. The gap grows with k (at k = 18 the
-prediction says 17; the measurement says 11). The slope is close to **2/3**.
+prediction says 17; the measurement says 11). On that stretch of the dial, the fitted
+slope read close to **2/3** — hold that number loosely; a signpost awaits below.
 
-![The law: K* grows near-linearly with k — along 2k/3, not the beautiful k−1](figures/ch07-the-law.svg)
+![The law: K* grows linearly with k — and when the dial was extended, the slope settled on one half, not the beautiful k−1 nor our own first two-thirds](figures/ch07-the-law.svg)
 
 ## What the broken prediction taught
 
-Why 2k/3, when the belief has k−1 degrees of freedom? Because — and the probe itself
-proves this — the belief **is** geometrically (k−1)-dimensional: σ contains it at
-R² ≥ 0.91. But its predictive weight is *front-loaded*: a compressed core of directions
-does most of the forecasting work. K\* never measured geometry. It measures the
-**predictively load-bearing** dimension — the part of the notebook the future actually
-leans on — and that part is about two-thirds of the simplex.
+Why so far below k−1, when the belief has k−1 degrees of freedom? Because — and the
+probe itself proves this — the belief **is** geometrically (k−1)-dimensional: σ
+contains it at R² ≥ 0.91. But its predictive weight is *front-loaded*: a compressed
+core of directions does most of the forecasting work. K\* never measured geometry. It
+measures the **predictively load-bearing** dimension — the part of the notebook the
+future actually leans on — and that part is a fraction of the simplex.
 
-So the walk got its first functional law, K\*(k) ≈ 2k/3, by refusing the prettier one
-twice — once when it winked post-hoc, once when it shone through a disqualified test.
+So the walk got its first functional law by refusing the prettier ones — k−1 twice,
+once when it winked post-hoc and once when it shone through a disqualified test; and
+later, as the signpost below records, even our own first coefficient.
 There is one loose thread, though. If the *geometry* is really all there, some
 architecture ought to be able to keep it all… and there is a kind of machine whose
 notebook is not discovered but **declared**. What happens to the law there is the next
 chapter — and it is the sharpest result of the whole walk.
+
+## 🪧 A signpost, hammered in after publication
+
+*(July 2026 — the walk kept walking.)* **Ahh — no. Not two-thirds. One half.**
+
+Round four carried a published reserve: *"the exact factor would need more k."* We
+cashed it. Dial extended to k = 24, 30, 36, two seeds each, on top of the consolidated
+points below. Over **eight values of k**, the law comes out **K\* = 0.44·k + 2
+(R² = 0.984)** — and head-to-head, **k/2 fits six times better than 2k/3**; at the
+three largest k the measurement is k/2 *exactly* (12.5, 15.5, 18). Our pretty fraction
+was an artifact of fitting through the origin on a short dial, where the little +2
+intercept masquerades as extra slope.
+
+What survives — strengthened: the law exists, monotone, linear, better measured than
+ever; and the compression is *deeper* than we first told you — one half, even further
+below the geometric k−1. The chapter above is kept as it was lived; the number to carry
+away is **k/2**. Proof table and the other post-publication verdicts:
+[the epilogue](epilogue-postcards.md).
 
 ---
 
@@ -96,5 +116,6 @@ interesting.
 Shai et al. (2024) showed transformers *represent* the belief simplex in their residual
 stream, a lineage that runs back to computational mechanics (Crutchfield & Young,
 1989). Our result agrees with the geometry (the probe finds it) and adds the
-interventional twist: what the capability *leans on* is a compressed two-thirds of it.
+interventional twist: what the capability *leans on* is a compressed fraction of it —
+one half, once the dial was long enough to measure it honestly.
 Full references: [`paper/references.md`](../paper/references.md).

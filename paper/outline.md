@@ -16,7 +16,7 @@ gesture kills a transformer's *discovered* notebook and a recurrent world model'
 *declared* latent state identically. Around this core we characterize σ: necessary, not
 hosted, separably composable, of finite linear dimension K\* that is set by architecture
 (tiers 4/16/32), metrologically validated, and — on hidden-state tracking — obeying the
-first functional law we know of for such an object, K\*(k) ≈ 2k/3, falsifying the naive
+first functional law we know of for such an object, K\*(k) ≈ k/2 (first fit 2k/3, corrected by range extension), falsifying the naive
 belief-geometry prediction k−1. Two pre-registered predictions of the program were
 validated; several of our own hypotheses were falsified and are reported. Every claim
 maps to a runnable command.
@@ -62,7 +62,7 @@ maps to a runnable command.
   the ruler is straight; the OLMo outlier is architectural fact, not gauge artifact.
 - **Tiers, not a constant:** K\* set by architecture, not size (Qwen flat 0.5→3B; tiers
   post-norm ≪ 16 < 32); candidate causes falsified (norm placement, norm type); cause open.
-- **The law:** on k-state hidden-state tracking, K\*(k) monotone ~linear ≈ 2k/3;
+- **The law:** on k-state hidden-state tracking, K\*(k) monotone ~linear ≈ k/2 (0.44k+2, R²=0.984 over 8 k; first fit 2k/3 fell to the extension);
   k−1 (full belief simplex) falsified conclusively; predictive dimension < geometric
   dimension (belief is (k−1)-dim geometrically, front-loaded predictively); declared
   state keeps k−1, discovered notebook compresses — seed-robust.
@@ -89,7 +89,7 @@ maps to a runnable command.
   Verdict: **λ̂ is governed by ARCHITECTURE, K\* by the TASK**; their co-variation is
   mediated by k, not a direct link. A clean bound, reported as such — and the tie
   {k=6, k=9 → K\*=5, λ̂ ×2} is the fingerprint separating the geometric dimension
-  (λ̂ side, ~k−1) from the predictive one (K\*, ~2k/3).
+  (λ̂ side, ~k−1) from the predictive one (K\*, ~k/2).
 
 ## 6. What the measurement buys (and what structure costs)
 - Engineering value of K\*: the FLOOR of a designed latent (below K\*, failure at every
@@ -135,5 +135,5 @@ Tier 0 runs in CI on every commit.
 ### Figures (draft list)
 F1 gesture taxonomy & witnesses · F2 two-arcs collapse panel across substrates ·
 F3 formation arc (0/3 frozen form) · F4 K\* metrology (variance vs attribution) ·
-F5 architecture tiers · F6 K\*(k): 2k/3 vs k−1 · F7 implicit vs explicit, same death ·
+F5 architecture tiers · F6 K\*(k): k/2 vs 2k/3 vs k−1 · F7 implicit vs explicit, same death ·
 F8 LLC at matched loss · F9 latent-size floor & cost trough.

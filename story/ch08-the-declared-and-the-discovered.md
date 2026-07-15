@@ -42,7 +42,8 @@ category is real, and the invariant is its detector.
 ## The dimensional twist
 
 Chapter 7 left a loose thread: the belief has k−1 geometric degrees of freedom, yet the
-discovered notebook only *leans on* ≈ 2k/3 of them. So what does the **declared** state
+discovered notebook only *leans on* about half of them (≈ k/2, once chapter 7's
+signpost tightened the fraction). So what does the **declared** state
 keep? Measure K\* on z: **≈ k−1** — 6, 11, 16, 16 against a predicted 5, 11, 14, 17.
 The declared state carries the whole simplex.
 
@@ -69,7 +70,7 @@ reading.
 
 Evening: only one lever can settle it — something that moves K\* while k stays put. We
 *had* that lever; it is this chapter. At fixed k, the declared state's K\* (≈ k−1) sits
-far above the discovered one's (≈ 2k/3). If λ̂ reads K\*, it must follow. It did the
+far above the discovered one's (≈ k/2). If λ̂ reads K\*, it must follow. It did the
 opposite (correlation of the differences: −0.97) — and inside the recurrent model
 alone, K\* more than tripled while λ̂ sat flat. **λ̂ does not read the notebook.** It
 belongs to the architecture's landscape; K\* belongs to the task; they had only been

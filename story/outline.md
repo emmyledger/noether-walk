@@ -56,14 +56,14 @@ length until a test could *conclusively* speak) — and the verdict: there **is*
 monotone, nearly linear… with slope ~2/3, not 1. The discovered notebook compresses the
 geometry it carries; the predictive dimension is smaller than the geometric one.
 **Figure:** K\*(k) data points against the two candidate lines (k−1 dashed, falsified;
-2k/3 solid).
+k/2 solid — with the 2k/3 first-fit shown falling; see the post-publication signpost).
 
 ## 8. The declared and the discovered
 Two architectures that share nothing: a transformer whose notebook we had to *find*, and
 a world model whose state is *declared by construction*. Same freeze, same death. The
 invariant crosses the implicit↔explicit divide — and the dimensions differ exactly as
 chapter 7 predicts (declared state keeps the full geometry k−1; discovered notebook
-compresses to ~2k/3).
+compresses to ~k/2).
 **Coda — the pair that killed a bridge.** The same two machines, reused as an
 instrument: they move the notebook's dimension at fixed task complexity, and thereby
 falsified our own freshly-supported prediction that the loss landscape's complexity
@@ -96,6 +96,14 @@ What this walk does **not** claim (small models, one self-trained formation run,
 formal bridge unproven). The open fronts, stated as invitations. And the standing offer:
 the gesture is packaged — take it to a substrate we never touched, and try to kill it.
 **Figure:** the map so far, with the blank regions drawn honestly blank.
+
+## Epilogue. Postcards from after the walk (LIVING)
+The page where post-publication verdicts land, newest first, the ones that catch us at
+the top: the slope corrected (2k/3 → k/2, the proof row), the saturated tiers probe
+(instrument, not verdict), the structure-blind ruler, the tempered right-sizing — and
+the one that held (three seeds, two machines). When a postcard corrects a chapter, the
+chapter gets a dated signpost (chapter 7 wears the first); this page keeps the "before"
+honest. **Figure:** the signposts on the trail.
 
 ---
 

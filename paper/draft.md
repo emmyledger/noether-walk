@@ -27,7 +27,8 @@ epiphenomenal; composable by separable superposition; of finite, linear dimensio
 We validate K\* metrologically (variance ordering matches attribution ordering across
 three model families), find it set by architecture rather than scale (tiers 4/16/32;
 size-invariant from 0.5B to 3B), and establish its first functional law on k-state
-tracking tasks: K\*(k) is monotone and near-linear but ≈ 2k/3, falsifying the naive
+tracking tasks: K\*(k) is monotone and near-linear but ≈ k/2 (our own first fit read
+2k/3 until a longer range corrected it), falsifying the naive
 belief-geometry prediction k−1 — the *predictively load-bearing* dimension is smaller
 than the geometric one, and only declared states retain the full k−1 geometry. Two
 pre-registered predictions of the program were validated (formation-coupled
@@ -112,7 +113,7 @@ The invariant then becomes an instrument, and the rest of the paper is what it m
   task-attribution yields the same dimension across three model families — and is set
   by **architecture, not scale** (tiers 4/16/32; constant across a 6× size range). On
   k-state hidden-state tracking, K\* obeys the first functional law we know of for this
-  object: monotone, near-linear, **≈ 2k/3 rather than the k−1** the belief-simplex
+  object: monotone, near-linear, **≈ k/2 rather than the k−1** the belief-simplex
   geometry predicts. The belief *is* geometrically (k−1)-dimensional; its predictive
   weight is front-loaded. Declared states keep the full geometry; discovered notebooks
   compress.
@@ -149,7 +150,7 @@ discontinuity, is the robust phenomenon.
 2. An interventional characterization of the slow variable σ: necessity, separable
    composition, structured-multiset nature, finite linear dimension.
 3. A metrology of K\* and two structural results: architecture-set tiers (with the
-   obvious causal candidates falsified on matched toys), and the law K\*(k) ≈ 2k/3
+   obvious causal candidates falsified on matched toys), and the law K\*(k) ≈ k/2
    falsifying the belief-simplex prediction.
 4. Two validated pre-registered predictions (formation-coupled graftability;
    loss-independent geometric imprint via LLC), and a catalogue of our own falsified
@@ -372,7 +373,7 @@ One gesture, two architectures that share neither mechanism, training objective,
 even whether σ is an emergent object or a declared one — and the same death. This is
 the result that carries the trans-substrate thesis, and it sets up a quantitative twist
 (§4.6): the *declared* state retains the full belief geometry (K\* ≈ k−1), while the
-*discovered* notebook compresses it (K\* ≈ 2k/3).
+*discovered* notebook compresses it (K\* ≈ k/2).
 
 ### 3.5 What "never falsified" means
 
@@ -433,7 +434,7 @@ subspace*, not a curved manifold.
 One reading rule, to prevent a confusion we fell into ourselves: **K\* is
 notebook-specific, not universal.** In-context rules on pretrained models measure
 ~O(20–32); a one-bit syntactic-agreement notebook measures 1 (§6.2); a k-state belief notebook
-measures ~2k/3 (§4.6). These are different objects; comparing their K\* across tasks is
+measures ~k/2 (§4.6). These are different objects; comparing their K\* across tasks is
 a category error.
 
 ### 4.4 Metrology: is the ruler straight?
@@ -473,7 +474,7 @@ properties of real architectures we have not yet isolated. Reserves: the size gr
 coarse (tiers are robust; the numbers are intervals), and the cross-family comparison
 correlates several factors rather than isolating one.
 
-### 4.6 The first functional law: K\*(k) ≈ 2k/3, and the falsification of k−1
+### 4.6 The first functional law: K\*(k) ≈ k/2 — reached by falsifying k−1, and then our own first coefficient
 
 The tiers are categorical. A *law* needs a substrate where theory predicts K\* as a
 function of a dial we control. Hidden-state tracking provides one: a k-state hidden
@@ -496,8 +497,17 @@ It took four pre-registered rounds to get an answer this test could not take bac
 4. *The clean round*: σ probed at the belief-complete layer, fresh k = (6, 12, 15, 18),
    retrained. Sanity finally passed everywhere (R² 0.91–0.95) — the test could speak.
    Verdict: **monotone, near-linear — and k−1 falsified.** K\*_sat90 = {5, 7, 9, 11},
-   strictly increasing, undershooting k−1 by a growing gap (k=18 → 11 vs 17); the slope
-   is ≈ 2/3. Replicated on a fresh seed ({5, 7, 9} at k = 9, 12, 15).
+   strictly increasing, undershooting k−1 by a growing gap (k=18 → 11 vs 17); on that
+   range, the fitted slope read ≈ 2/3. Replicated on a fresh seed ({5, 7, 9} at
+   k = 9, 12, 15).
+5. *The coefficient falls too.* Round four's published reserve — "the exact factor
+   would need more k" — was cashed by extending the dial to k = 24, 30, 36 (two seeds
+   each, on top of the consolidated three-seed points below 18). Over **eight values of
+   k** the law is **K\* = 0.443·k + 2.07 (R² = 0.984)**, and the through-origin
+   comparison is unambiguous: **k/2 fits six times better than 2k/3** (residuals 12.9
+   vs 77.1) — at the three largest k the measurement *is* k/2 exactly (12.5, 15.5, 18).
+   Our "2/3" was an artifact of fitting through the origin on a short dial range, where
+   the +2 intercept masquerades as slope. **The coefficient is one half.**
 
 The resolution of the apparent paradox is itself a result: the belief **is**
 geometrically (k−1)-dimensional (that is what the high R² says), but its predictive
@@ -508,8 +518,10 @@ declared state keeps the whole simplex; the discovered notebook compresses it. B
 replicate across seeds, with explicit > implicit at every k.
 
 This is the first *functional* dependence of K\* we know of (versus the categorical
-tiers of §4.5), and it was reached by falsifying the beautiful prediction rather than
-hosting it.
+tiers of §4.5), and it was reached by falsifying the beautiful prediction — and then
+our own first coefficient. The correction strengthens the message rather than weakening
+it: the law is better measured (R² = 0.984 over eight k, 2–3 seeds per point), and the
+discovered notebook sits even *further* below the geometric k−1 than we first reported.
 
 ### 4.7 Mechanistic byproducts
 
@@ -518,8 +530,13 @@ tracking, σ is carried *forward* along the computation at the current position 
 reread from past context as induction and rules are; freezing the reading path alone is
 not sufficient, and the correct gesture (freeze both routes) was pre-registered once
 this was understood. **Layer migration**: σ lives at layer 1 in a 2-layer model but at
-the belief-complete layer in deeper ones. Notebooks have addresses, and the addresses
-depend on architecture and depth.
+the belief-complete layer in deeper ones. **Task richness moves σ too**: a probe basis
+validated on a lean task (the belief HMM, where the belief is nearly all the useful
+computation) does not transport to a rich one — on language-model training, the total
+written residual conflates every capability's notebook, and a probe built on it
+saturates; our first depth×norm campaign for the tiers was disqualified by exactly this
+and declared inconclusive rather than read (§9). Notebooks have addresses, and the
+addresses depend on architecture, depth, *and the task's richness*.
 
 ## 5. The dynamics: how the notebook forms
 
@@ -597,7 +614,7 @@ reserve, pre-registered: λ̂ correlates better with k itself (0.95), and at equ
 λ̂ *reads* K\*.
 
 **Act 2 (falsified, same day).** The implicit/explicit pair of §3.4 is exactly the
-lever the reserve demands: it moves K\* at *fixed* k (discovered notebook ≈ 2k/3,
+lever the reserve demands: it moves K\* at *fixed* k (discovered notebook ≈ k/2,
 declared state ≈ k−1). Verdict: Δλ̂ **anti-correlates** with ΔK\* (Pearson ≈ −0.97);
 and within the recurrent model alone, K\* more than triples (5 → 18) while λ̂ stays
 flat (~0.5). **λ̂ does not read K\*.** The local learning coefficient is governed by
@@ -608,7 +625,7 @@ have since been consolidated across **three seeds**, the fresh two run on two di
 machines, with the intra-RSSM flatline holding on every seed (λ̂ growth < 2× while K\*
 triples): the single-seed reserve is lifted. One elegant byproduct: the fingerprint
 {k=6, k=9 → same K\*, λ̂ ×2} independently confirms §4.6's split — λ̂ sits on the
-*geometric* side of the belief (~k−1), K\* on the *predictive* side (~2k/3), the same
+*geometric* side of the belief (~k−1), K\* on the *predictive* side (~k/2), the same
 front-loading seen from the weights.
 
 ### 5.7 What kind of process, then?
@@ -732,7 +749,8 @@ residual stream — a lineage running back to computational mechanics (Crutchfie
 Young, 1989). We confirm the geometry (probe R² ≥ 0.91) and intervene on it: the
 belief-notebook is causally necessary, but the naive dimensional prediction of the
 geometric reading (K\* = k−1) is falsified — the predictively load-bearing dimension is
-≈ 2k/3, and only a *declared* state (RSSM; Hafner et al., 2019) retains the full
+≈ k/2 (our own first fit of 2k/3 fell when the range was extended — §4.6), and only a
+*declared* state (RSSM; Hafner et al., 2019) retains the full
 simplex. Geometry present ≠ geometry load-bearing is, we believe, a useful corrective
 for regression-based readings generally.
 
@@ -795,7 +813,10 @@ Stated as invitations — the instrument travels (Tier 0 runs on a laptop; §Rep
 
 1. **The mechanism of the K\* tiers.** What in a full-scale architecture compresses a
    notebook to K\* = 4? Norm placement and norm type are falsified on matched toys;
-   the minimal toy cannot reach the low tier at all. The most concrete open question
+   the minimal toy cannot reach the low tier at all. A first depth×norm campaign on
+   richer toys was disqualified by its own instrument (the whole-residual probe
+   saturates on rich tasks — §4.7); the scoped next step is to *localize* the induction
+   notebook in deep toys before re-running the grid. The most concrete open question
    this work produces.
 2. **The formal bridge.** Derive — or refute — that the freeze symmetry is the
    invariance group whose dimension locks at formation. The program's theoretical core.
