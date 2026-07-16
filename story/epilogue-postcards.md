@@ -9,7 +9,7 @@ a postcard corrects a chapter, the chapter gets a signpost (chapter 7 wears the 
 one), the claim documents are amended the same day, and this page keeps the story of
 the "before" honest. Newest first.
 
-![The signposts: three places the walk fell after publication, and one plank that held](figures/epilogue-signposts.svg)
+![The signposts: three places the walk fell after publication, one plank that held, one coefficient derived — and at the end of the trail, the target never hit: the invariant, waiting for your shot](figures/epilogue-signposts.svg)
 
 ---
 
