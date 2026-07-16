@@ -7,6 +7,7 @@ authors:
 # No ORCID and no affiliation: this work is published under a pseudonym, deliberately.
 # Do not add identifying metadata here without reading meta/discovery-preregistration.md.
 version: 1.0.0
+doi: 10.5281/zenodo.21396996
 date-released: 2026-07-16
 year: 2026
 url: "https://github.com/emmyledger/noether-walk"

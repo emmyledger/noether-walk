@@ -2,6 +2,7 @@
 
 [![tier0](https://github.com/emmyledger/noether-walk/actions/workflows/ci.yml/badge.svg)](https://github.com/emmyledger/noether-walk/actions/workflows/ci.yml)
 [![paper-pdf](https://github.com/emmyledger/noether-walk/actions/workflows/paper.yml/badge.svg)](https://github.com/emmyledger/noether-walk/actions/workflows/paper.yml)
+[![DOI](https://zenodo.org/badge/1300545702.svg)](https://zenodo.org/badge/latestdoi/1300545702)
 
 > *Same gesture, same signature — and a kill criterion written down before every step.*
 
@@ -73,8 +74,10 @@ you got here, the referrer ledger is curious about you.*
 
 ## Cite
 
-See [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button uses it).
-A versioned, DOI-stamped archive of each release is planned via Zenodo.
+See [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button uses it) —
+and if you falsify this work, open an issue instead: that is worth more to us than the
+citation. Each release is archived with a DOI on Zenodo (badge above); the paper PDF is
+attached to every [release](https://github.com/emmyledger/noether-walk/releases).
 
 ## License
 
