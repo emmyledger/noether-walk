@@ -28,10 +28,14 @@
 - Lau, E., Furman, Z., Wang, G., Murfet, D., & Wei, S. (2024). *The Local Learning
   Coefficient: A Singularity-Aware Complexity Measure.* arXiv:2308.12108. (The LLC
   estimator.)
+- Nanda, N., Chan, L., Lieberum, T., Smith, J., & Steinhardt, J. (2023). *Progress
+  Measures for Grokking via Mechanistic Interpretability.* ICLR 2023.
 - Noether, E. (1918). *Invariante Variationsprobleme.* Nachrichten von der Gesellschaft
   der Wissenschaften zu Göttingen, 235–257.
 - Olsson, C., Elhage, N., Nanda, N., et al. (2022). *In-context Learning and Induction
   Heads.* Transformer Circuits Thread.
+- Power, A., Burda, Y., Edwards, H., Babuschkin, I., & Misra, V. (2022). *Grokking:
+  Generalization Beyond Overfitting on Small Algorithmic Datasets.* arXiv:2201.02177.
 - Park, K., Choe, Y. J., & Veitch, V. (2023). *The Linear Representation Hypothesis and
   the Geometry of Large Language Models.* arXiv:2311.03658.
 - OLMo Team (2024). *2 OLMo 2 Furious.* arXiv:2501.00656. (OLMo 2; fully open models,

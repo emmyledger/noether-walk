@@ -817,6 +817,11 @@ The program's anti-overclaim register, verbatim in spirit:
   engineering claim is the floor bound only.
 - **λ̂ does not read K\*** (§5.6); no direct object↔dynamics link is claimed — the
   established relation is co-variation through task complexity.
+- **The freeze does not sort storage regimes**: on a grokking substrate where σ is the
+  sole route to the readout, memorized and generalized solutions die identically under
+  the freeze — our pre-registered dissociation prediction was falsified (epilogue).
+  With §6.2, the full bound: the gesture detects *necessity*, uniformly — not structure
+  type, not upstream computation, not storage regime.
 - **No generalization beyond tested substrates**: inference-side results cover models
   up to 3B parameters from four families; the real-network formation result covers one
   small architecture trained by us; hidden-state and structure-cost results are

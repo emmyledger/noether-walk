@@ -13,6 +13,32 @@ the "before" honest. Newest first.
 
 ---
 
+**📮 July 2026 — "The freeze does not sort memorized from understood — we bet it would."**
+
+Grokking is the cleanest natural experiment on the difference between *storing* answers
+and *understanding* them: train a tiny network on modular addition and it memorizes the
+training pairs almost instantly (train at 100 % by epoch 200), then — tens of thousands
+of epochs later — abruptly *generalizes* (test at 100 % by epoch ~30,000; we reproduced
+this textbook curve on two seeds). We pre-registered a bet: the freeze should tell the
+two solutions apart — spare the memorized answers (they live in the weights) and kill
+the generalizing ones (they live in a notebook). **Both kill criteria fired.** The
+freeze collapses train *and* test, in *both* phases, identically (to ~0.01, both
+seeds). No dissociation, anywhere.
+
+And the autopsy is the lesson. At the readout position of a one-layer toy, the
+embedding is the same for every example — so *all* example-specific information, stored
+or understood, must flow through the very write we freeze. σ is the **only route**;
+even a purely weight-stored solution has to express itself through it. The gesture
+never had a chance to see the difference — and that is the bound, now measured three
+ways: the freeze is blind to the *type of structure* (the matched grammars), to the
+*computation upstream* (payload, not process), and now to the *storage regime*. **It
+detects necessity — that something must pass here — uniformly, and nothing else.** One
+crisp positive rode along: post-grokking, the generalizing notebook measures **K\* = 8**
+(both seeds) — a new number that rhymes with the known Fourier-circuit account of
+modular addition (Nanda et al., 2023).
+
+---
+
 **📮 July 2026 — "The coefficient, explained: the slope follows the spectral gap."**
 
 The postcard below corrected our law to K\* ≈ k/2 and left the obvious question
