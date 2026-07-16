@@ -103,6 +103,18 @@ below the geometric k−1. The chapter above is kept as it was lived; the number
 away is **k/2**. Proof table and the other post-publication verdicts:
 [the epilogue](epilogue-postcards.md).
 
+## 🪧 A second signpost — the half, explained
+
+*(July 2026, days later.)* The correction begged its own question: why one *half*?
+Answer, pre-registered and then measured: **the slope follows the spectral gap** — how
+fast the little world forgets. Slow the forgetting and the notebook fills toward the
+full simplex: the slope climbs (0.425 → 0.583 as |λ₂| goes 0.90 → 0.99) while the
+intercept melts to zero. "One half" is simply what the law reads at the mixing rate we
+had always used. So the full arc of this chapter, in one breath: we falsified k−1, then
+falsified our own 2/3, and then **derived** what replaced them — K\* ≈ b(|λ₂|)·k. The
+dial gets the last word, and this time it spoke a law. Numbers and reserves:
+[the epilogue](epilogue-postcards.md).
+
 ---
 
 **What would have killed this chapter — and didn't:** a flat K\*(k) in round four (no

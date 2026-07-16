@@ -28,7 +28,8 @@ We validate K\* metrologically (variance ordering matches attribution ordering a
 three model families), find it set by architecture rather than scale (tiers 4/16/32;
 size-invariant from 0.5B to 3B), and establish its first functional law on k-state
 tracking tasks: K\*(k) is monotone and near-linear but ≈ k/2 (our own first fit read
-2k/3 until a longer range corrected it), falsifying the naive
+2k/3 until a longer range corrected it — and the slope itself was then derived: it
+tracks the process's spectral gap), falsifying the naive
 belief-geometry prediction k−1 — the *predictively load-bearing* dimension is smaller
 than the geometric one, and only declared states retain the full k−1 geometry. Two
 pre-registered predictions of the program were validated (formation-coupled
@@ -517,11 +518,26 @@ geometric one. The control that clinches it is the explicit world model (§3.4):
 declared state keeps the whole simplex; the discovered notebook compresses it. Both laws
 replicate across seeds, with explicit > implicit at every k.
 
+**The coefficient, derived.** A pre-registered follow-up asked whether the slope b
+tracks the hidden process's **spectral gap** |λ₂| — how slowly the world forgets —
+holding the architecture fixed and sweeping |λ₂| ∈ {0.90, 0.95, 0.99} over k = 12…30:
+**b = 0.425, 0.461, 0.583** — monotone, clearing the pre-registered bar (Δb > 0.10;
+measured 0.158). An unpredicted but coherent bonus: the +2 intercept vanishes as
+|λ₂| → 1 (2.95 → 1.65 → 0.00) — slope rising toward 1 and floor dissolving, both
+pointing to the geometric limit k−1 for near-deterministic processes. **"One half" is
+b(|λ₂|) evaluated at 0.95**, the mixing rate used since the first hidden-state
+experiment; the law is spectral, **K\* ≈ b(|λ₂|)·k**. Reserves: three gap values
+(monotonicity leans on the 0.99 point), a single family of transition structures (the
+*dependence* is established, not the functional form), and the emission-ambiguity
+lever untouched.
+
 This is the first *functional* dependence of K\* we know of (versus the categorical
-tiers of §4.5), and it was reached by falsifying the beautiful prediction — and then
-our own first coefficient. The correction strengthens the message rather than weakening
-it: the law is better measured (R² = 0.984 over eight k, 2–3 seeds per point), and the
-discovered notebook sits even *further* below the geometric k−1 than we first reported.
+tiers of §4.5), and it was reached by falsifying the beautiful prediction, then our own
+first coefficient — and then deriving the one that replaced them. The corrections
+strengthen the message rather than weakening it: the law is better measured
+(R² = 0.984 over eight k, 2–3 seeds per point), the discovered notebook sits even
+*further* below the geometric k−1 than we first reported, and its slope is no longer a
+bare number but a measured property of the process being tracked.
 
 ### 4.7 Mechanistic byproducts
 

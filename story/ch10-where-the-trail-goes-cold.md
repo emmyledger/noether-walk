@@ -21,7 +21,8 @@ didn't.
 hundreds), linear, separably composable, irreducible to summaries — and their size is
 set by architecture in tiers no one can yet explain, while on state-tracking tasks it
 follows the first functional law of this program, K\* ≈ k/2 — a coefficient the walk
-itself corrected once, in public (chapter 7's signpost): capability leans on a
+corrected once in public, then *derived* (it tracks the process's spectral gap —
+chapter 7 wears both signposts): capability leans on a
 compressed core of the geometry it carries.
 
 **The dynamics got a shape.** Formation is gradual at the mechanism level — no critical

@@ -99,7 +99,7 @@ the gesture is packaged — take it to a substrate we never touched, and try to 
 
 ## Epilogue. Postcards from after the walk (LIVING)
 The page where post-publication verdicts land, newest first, the ones that catch us at
-the top: the slope corrected (2k/3 → k/2, the proof row), the saturated tiers probe
+the top: the slope corrected (2k/3 → k/2, the proof row) then DERIVED (spectral gap), the saturated tiers probe
 (instrument, not verdict), the structure-blind ruler, the tempered right-sizing — and
 the one that held (three seeds, two machines). When a postcard corrects a chapter, the
 chapter gets a dated signpost (chapter 7 wears the first); this page keeps the "before"

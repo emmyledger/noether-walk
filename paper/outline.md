@@ -63,6 +63,8 @@ maps to a runnable command.
 - **Tiers, not a constant:** K\* set by architecture, not size (Qwen flat 0.5→3B; tiers
   post-norm ≪ 16 < 32); candidate causes falsified (norm placement, norm type); cause open.
 - **The law:** on k-state hidden-state tracking, K\*(k) monotone ~linear ≈ k/2 (0.44k+2, R²=0.984 over 8 k; first fit 2k/3 fell to the extension);
+  slope DERIVED: it tracks the spectral gap |λ₂| (b 0.425→0.583 across 0.90→0.99,
+  intercept →0; 'one half' = b at 0.95);
   k−1 (full belief simplex) falsified conclusively; predictive dimension < geometric
   dimension (belief is (k−1)-dim geometrically, front-loaded predictively); declared
   state keeps k−1, discovered notebook compresses — seed-robust.

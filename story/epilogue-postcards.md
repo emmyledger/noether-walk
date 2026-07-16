@@ -13,6 +13,25 @@ the "before" honest. Newest first.
 
 ---
 
+**📮 July 2026 — "The coefficient, explained: the slope follows the spectral gap."**
+
+The postcard below corrected our law to K\* ≈ k/2 and left the obvious question
+hanging: *why one half?* The pre-registered follow-up asked whether the slope tracks
+how fast the little world **forgets** — the hidden process's spectral gap |λ₂|. Turn
+*that* dial (|λ₂| = 0.90, 0.95, 0.99) and the slope follows: **b = 0.425, 0.461,
+0.583** (pre-registered bar: Δb > 0.10; measured: 0.158). An unpredicted bonus with the
+same reading: the little +2 intercept **vanishes** as mixing slows (2.95 → 1.65 →
+0.00) — slope rising, floor dissolving, both pointing at the geometric limit k−1 for a
+world that never forgets. So "one half" was never fundamental: it is **b(|λ₂|)
+evaluated at 0.95**, the mixing rate we had happened to use since the very first
+hidden-state experiment. The law is spectral: **K\* ≈ b(|λ₂|)·k.** A coefficient we
+corrected in public one week was derived from the world's own clock the next. Reserves,
+in full: three gap values only (the clean jump sits at 0.99), one family of transition
+structures (a *dependence* is established, not a functional form), and the second lever
+— emission ambiguity — untouched.
+
+---
+
 **📮 July 2026 — "Ahh — no. The slope is one half."**
 
 Chapter 7 published a law, K\* ≈ 2k/3, with its reserve stated: *the exact factor would
