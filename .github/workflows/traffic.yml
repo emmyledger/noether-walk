@@ -33,7 +33,9 @@ jobs:
           # secret. Never use a token from another account -- see the pre-registration.
           GITHUB_TOKEN: ${{ secrets.TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: python3 meta/traffic_snapshot.py | tee -a "$GITHUB_STEP_SUMMARY"
+        run: |
+          set -o pipefail   # sans lui, le tube avale l'exit code du script (échec masqué)
+          python3 meta/traffic_snapshot.py | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Commit the ledger if it moved
         run: |
