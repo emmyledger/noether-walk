@@ -39,10 +39,12 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ls -la meta/traffic/ || true
           git add meta/traffic/ledger.json
           if git diff --staged --quiet; then
             echo "ledger unchanged" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git commit -m "traffic ledger: $(date -u +%Y-%m-%d)"
-          git push
+          # checkout laisse HEAD détachée : pousser explicitement vers main
+          git push origin HEAD:main
