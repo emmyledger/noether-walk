@@ -108,6 +108,12 @@
       "view_uniques": 1,
       "clones": 3,
       "clone_uniques": 3
+    },
+    "2026-07-22": {
+      "views": 8,
+      "view_uniques": 1,
+      "clones": 6,
+      "clone_uniques": 5
     }
   },
   "snapshots": [
@@ -434,7 +440,73 @@
           "uniques": 1
         }
       ]
+    },
+    {
+      "taken_at": "2026-07-23T11:20:01+00:00",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "referrers": [
+        {
+          "source": "github.com",
+          "count": 12,
+          "uniques": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/emmyledger/noether-walk",
+          "count": 19,
+          "uniques": 2
+        },
+        {
+          "path": "/emmyledger/noether-walk/actions/workflows/traffic.yml",
+          "count": 5,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/discussions",
+          "count": 5,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/actions",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch07-a-law-at-last.md",
+          "count": 3,
+          "uniques": 2
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch04-the-day-we-fooled-ourselves.md",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/emmyledger/noether-walk/pulls",
+          "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/actions/new",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/actions/runs/29637112266",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/actions/runs/29637112266/job/88061274114",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
     }
   ],
-  "updated_at": "2026-07-22T11:18:41+00:00"
+  "updated_at": "2026-07-23T11:20:01+00:00"
 }
