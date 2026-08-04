@@ -168,6 +168,24 @@
       "view_uniques": 0,
       "clones": 9,
       "clone_uniques": 6
+    },
+    "2026-08-01": {
+      "views": 0,
+      "view_uniques": 0,
+      "clones": 6,
+      "clone_uniques": 6
+    },
+    "2026-08-02": {
+      "views": 1,
+      "view_uniques": 1,
+      "clones": 2,
+      "clone_uniques": 2
+    },
+    "2026-08-03": {
+      "views": 1,
+      "view_uniques": 1,
+      "clones": 3,
+      "clone_uniques": 3
     }
   },
   "snapshots": [
@@ -1286,7 +1304,58 @@
           "uniques": 1
         }
       ]
+    },
+    {
+      "taken_at": "2026-08-04T11:37:23+00:00",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "referrers": [
+        {
+          "source": "github.com",
+          "count": 6,
+          "uniques": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch07-a-law-at-last.md",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/emmyledger/noether-walk",
+          "count": 3,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/pulls",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch01-the-graveyard-of-resemblances.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch02-the-notebook.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/commits/main",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/tree/main/story",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
     }
   ],
-  "updated_at": "2026-08-03T13:31:18+00:00"
+  "updated_at": "2026-08-04T11:37:23+00:00"
 }
