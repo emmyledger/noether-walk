@@ -2414,7 +2414,73 @@
           "uniques": 1
         }
       ]
+    },
+    {
+      "taken_at": "2026-08-20T03:58:21+00:00",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "referrers": [
+        {
+          "source": "github.com",
+          "count": 19,
+          "uniques": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/emmyledger/noether-walk",
+          "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/.gitignore",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/FALSIFY.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/paper/draft.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/paper/outline.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/paper/pdf.yaml",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/paper/references.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/repro/expected/tier0_formation.json",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/src/invariants/verdicts.py",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch07-a-law-at-last.md",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
     }
   ],
-  "updated_at": "2026-08-19T03:58:35+00:00"
+  "updated_at": "2026-08-20T03:58:21+00:00"
 }
