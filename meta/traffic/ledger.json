@@ -306,6 +306,12 @@
       "view_uniques": 1,
       "clones": 3,
       "clone_uniques": 3
+    },
+    "2026-08-24": {
+      "views": 0,
+      "view_uniques": 0,
+      "clones": 5,
+      "clone_uniques": 5
     }
   },
   "snapshots": [
@@ -2591,7 +2597,22 @@
           "uniques": 2
         }
       ]
+    },
+    {
+      "taken_at": "2026-08-26T04:03:00+00:00",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch07-a-law-at-last.md",
+          "count": 2,
+          "uniques": 2
+        }
+      ]
     }
   ],
-  "updated_at": "2026-08-25T03:59:35+00:00"
+  "updated_at": "2026-08-26T04:03:00+00:00"
 }
