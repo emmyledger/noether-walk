@@ -2941,7 +2941,27 @@
           "uniques": 1
         }
       ]
+    },
+    {
+      "taken_at": "2026-09-09T08:09:22+00:00",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch07-a-law-at-last.md",
+          "count": 4,
+          "uniques": 3
+        },
+        {
+          "path": "/emmyledger/noether-walk",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-08T08:05:28+00:00"
+  "updated_at": "2026-09-09T08:09:22+00:00"
 }
