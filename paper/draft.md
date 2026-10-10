@@ -5,6 +5,52 @@
 Citations are (Author, year); full entries in [`references.md`](references.md). Every
 quantitative claim will link to a reproduction command; see [`../repro/`](../repro/).*
 
+> **🪧 Status notice (2026-10-10) — read this before the paper.**
+> The claims of this draft as released in v1.0.0 are **suspended**. An adversarial
+> review we ran on 2026-07-27 (four independent hostile readings, each finding below
+> re-verified at the source) found:
+>
+> 1. **Gesture and signature confounded on the cascade.** Freezing the slow variable at
+>    its mean — the gesture of this paper — does *not* stop the second level from
+>    organizing: it organizes anyway, earlier (τ₂ = 19 vs 81), and the separation of
+>    timescales is destroyed (Δ = 77 → 3). Only *erasing the source* of σ collapses it
+>    (φ₂ → 0.00) — a different operation, which §2.2 rejects. In the predecessor project
+>    the first operation was the *matched shadow* (a witness) and the second the
+>    *necessity test*; we swapped their roles between projects without noticing.
+> 2. **The decisive control is missing.** Every witness acts on σ itself or on another
+>    system. None asks whether freezing *another subspace of the same rank, at the same
+>    layer*, kills the capability too. Without it, "σ is necessary" cannot be told apart
+>    from "freezing that many dimensions here breaks the task".
+> 3. **§5.3 is not a validated prediction as stated.** Our own register recorded, at the
+>    time, that the graft onset (~169M) precedes the threshold that *defined* formation
+>    in the frozen plan (~210M), that this was the plan's kill clause taken literally,
+>    and that redefining formation as gradual was a post-hoc move "to be carried as
+>    such". The paper did the opposite, while §2.3 says thresholds are never moved.
+> 4. **The `sigma_both` gesture (§3.2, §4.7) is not traceable to any frozen plan.** The
+>    actual sequence was: planned gesture → no collapse → diagnosis → new gesture.
+> 5. **The abstract overstates reproducibility.** Tiers 1–2 ship artifacts and
+>    re-derivation, not retraining from scratch (see the reproducibility statement).
+>
+> **The deeper problem.** On most of our substrates σ is plausibly the *only route* from
+> input to readout (we diagnosed this on grokking and did not apply it elsewhere); in
+> that case "freezing σ collapses the capability" is partly a theorem about the
+> computation graph. Every falsification we report is peripheral and *shrank* the
+> content of the core instead of endangering it, and no world is described in which
+> the invariant would be false: what is missing is a *risky prediction of
+> non-collapse* on a substrate with a redundant notebook.
+>
+> **Raised by reviewers, not yet re-verified by us:** no uncertainty quantification
+> anywhere; "collapse" covers 40–70 % of retained capability in some rows, with no bar
+> shown; the metrology validates 64/16/8 while the published tiers are 32/16/4; four of
+> the "seven capability types" may be one mechanism counted four times.
+>
+> **What the reviewers left standing:** the a-priori designation of σ; the causality
+> guard; the formation arc (0/3 at 16×); and a register of reserves judged well above
+> the field's average — whose fault was to live in §8 while the abstract and the bold
+> type spoke without it. The word *invariant* in the title is under review: read it as
+> *candidate regularity*. Next round, with the missing control first: a successor
+> project, announced in the epilogue.
+
 ## Abstract
 
 Claims that unrelated learning systems share deep organizational principles usually rest
@@ -38,6 +84,12 @@ coefficient); several of our own hypotheses were falsified and are reported alon
 training-time causality artifact we discovered, fixed, and now guard against
 automatically. All results reproduce from pinned environments and registered seeds; the
 core collapse runs on a laptop in minutes.
+
+> 🪧 *(2026-10-10)* Three sentences of this abstract do not hold as written: "the
+> invariant was never falsified" (it was never put at real risk — status notice above),
+> the toy physics cascade as a substrate where the freeze collapses the capability
+> (finding 1), and "all results reproduce from pinned environments" (Tiers 1–2 ship
+> artifacts and re-derivation, not retraining).
 
 ## 1. Introduction
 
@@ -250,6 +302,8 @@ Every experiment follows the same lifecycle, and the repository preserves it:
    (calibrated in advance, non-saturated), and the explicit kill criterion.
 2. The verdict is read **only** against the frozen plan. Thresholds are never moved
    after contact with data.
+   *🪧 (2026-10-10) This rule was broken once in what we published: §5.3, where the
+   definition of formation was revised after the graft onset fell before it.*
 3. **Instrument failures** (a probe that fails its own sanity check, a control that
    saturates) are amended in a written, dated addendum *before* the re-run; the failed
    attempt remains on record. Several of our headline numbers were reached only on a
@@ -327,6 +381,15 @@ versus the total collapse of rules (→ 0.000), and hence σ's non-portability t
 contexts. And on *hidden-state tracking*, σ (the belief estimate) is **carried forward**
 along the query path rather than reread from context — the freeze gesture must follow σ
 where it actually lives, a pre-registered adaptation, not a post-hoc rescue.
+*🪧 (2026-10-10) Not supported by the register: `sigma_both` appears in no frozen plan
+or addendum; the gesture was changed after the planned one failed to collapse. Read it
+as a post-hoc adaptation.*
+
+> 🪧 *(2026-10-10)* No row of this table has the control that matters most — freezing
+> a non-σ subspace of the same rank at the same place. Until it is run, a "freeze" column
+> shows that *something of that size* is needed here, not that *σ* is. And the toy
+> cascade, listed in §3.1, belongs in no such table: there the gesture of this paper
+> makes the second level organize *earlier*, it does not prevent it.
 
 ### 3.3 Formation arc: freeze during training
 
@@ -377,6 +440,10 @@ the result that carries the trans-substrate thesis, and it sets up a quantitativ
 *discovered* notebook compresses it (K\* ≈ k/2).
 
 ### 3.5 What "never falsified" means
+
+> 🪧 *(2026-10-10)* The answer below misses the main point: an invariant can only die
+> by redundancy or by mis-designation of σ, and the protocol discards both in advance.
+> "Never falsified" therefore meant "never at risk". See the status notice.
 
 Every experiment above armed a pre-registered kill criterion; none fired. Across the
 program, plenty else did fire — two theoretical gates, several of our hypotheses about
@@ -545,7 +612,7 @@ Two facts any reuser of the instrument needs. **Carried vs. reread**: for hidden
 tracking, σ is carried *forward* along the computation at the current position — not
 reread from past context as induction and rules are; freezing the reading path alone is
 not sufficient, and the correct gesture (freeze both routes) was pre-registered once
-this was understood. **Layer migration**: σ lives at layer 1 in a 2-layer model but at
+this was understood *(🪧 2026-10-10: not traceable to any frozen plan — see §3.2)*. **Layer migration**: σ lives at layer 1 in a 2-layer model but at
 the belief-complete layer in deeper ones. **Task richness moves σ too**: a probe basis
 validated on a lean task (the belief HMM, where the belief is nearly all the useful
 computation) does not transport to a rich one — on language-model training, the total
@@ -587,6 +654,13 @@ geometry is **structural**, not a loss artifact. This is the program's second va
 prediction.
 
 ### 5.3 Grafting couples to formation (validated prediction #1)
+
+> 🪧 *(2026-10-10) Withdrawn as a validated prediction.* Taken literally, the frozen
+> plan defined formation by the prefix-matching threshold (~210M), and "graft clearly
+> *before* formation" was its kill clause. The graft onset (~169M) came first. We
+> redefined formation as gradual — defensible, and measured with a better instrument —
+> but after the fact; our own register said so at the time and asked for the reserve to
+> be carried. The measurements below stand; the word "validated" does not.
 
 If formation builds a *reader* for the notebook, then transplanting a correct σ should
 help only once the reader exists. Verdict: the graft score is ≈0 before formation,
@@ -796,6 +870,10 @@ hypothesis (Park et al., 2023). What we add to that old and good intuition is ex
 what it lacked: a falsifiable, portable gesture.
 
 ## 8. What we do not claim
+
+> 🪧 *(2026-10-10)* This list was honest and insufficient. Its first missing line: **we
+> do not claim that σ is necessary rather than merely sufficient-sized** — the
+> matched-rank control was never run. The rest: the status notice at the top.
 
 The program's anti-overclaim register, verbatim in spirit:
 

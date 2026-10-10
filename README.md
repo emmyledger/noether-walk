@@ -6,6 +6,22 @@
 
 > *Same gesture, same signature — and a kill criterion written down before every step.*
 
+> [!WARNING]
+> **Status, 2026-10-10 — the headline claims of v1.0.0 are suspended.** On 2026-07-27,
+> eleven days after release, an adversarial review of our own paper found that the walk
+> had fooled itself, in ways the walk's own rules forbid. In short: on the toy cascade,
+> the gesture we published does **not** produce the signature we published (we had
+> promoted a *witness* to the rank of *gesture*); the decisive control — freezing
+> *another* subspace of the same rank, at the same place — was **never run**; one
+> "validated prediction" rests on a definition our own register had flagged as moved
+> after contact with data; and no world is described in which the invariant could be
+> false. We took eleven weeks to say so here; that delay is on us too.
+> **What this means for you:** read "the invariant was never falsified" as "the
+> candidate regularity was never put at real risk." Full account, what still stands,
+> and what the next round must do: [the newest postcard](story/epilogue-postcards.md).
+> The paper and the chapters carry dated 🪧 signposts at every affected place; the
+> text around them is kept as it was published.
+
 **This is a living repository.** Calculations are still landing: corrections arrive as
 dated signposts in the chapters and as postcards in the
 [epilogue](story/epilogue-postcards.md) — the ones that catch us go at the top.
@@ -20,7 +36,8 @@ hypothesis.
 
 Across toy physics, purpose-built mini-networks, and real transformers (GPT-2, Pythia,
 Qwen, OLMo), through seven types of capability and one crossing of the implicit↔explicit
-divide, **the invariant has never been falsified**. Plenty of other things were — this
+divide, **the invariant has never been falsified** *(🪧 2026-10-10: nor was it ever
+truly put at risk — see the status note above)*. Plenty of other things were — this
 repository keeps the dead ends on the map, because a walk without wrong turns is a walk
 someone else took for you.
 

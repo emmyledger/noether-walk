@@ -30,6 +30,17 @@ One rung is nothing, of course. Cascades are the home turf of "order appears in 
 The point of rung 1 is only that the gesture is *performable* here, and does what it
 should. The test is whether the same gesture survives leaving home.
 
+> ## 🪧 A signpost, hammered in after publication — and this one is against us
+>
+> *(October 2026.)* **This rung is false as told.** Replace the slow memory by its
+> average — the gesture of this book — and the second stage *does* organize: earlier,
+> not never, with the separation between the two stages destroyed. What makes the
+> second stage vanish is a different operation: wiping out the order that *feeds* the
+> slow memory. Our earlier project had both, and called the first one a *control*.
+> Somewhere between two projects, the control became the gesture and nobody saw it.
+> The rung is kept as it was lived; the story of how we caught it is the newest
+> postcard in [the epilogue](epilogue-postcards.md).
+
 ## Rung 2: a machine we built to leave no exits
 
 The second world is a mini neural network we constructed ourselves, and the construction
@@ -103,7 +114,7 @@ One gesture, four verdicts per world, every threshold set before the run:
 | | must **collapse** | must **collapse** | must **survive** | must **survive** |
 |---|---|---|---|---|
 | world | freeze | pairing broken | pairing preserved | twin without notebook |
-| toy cascade | ✓ (2nd level never organizes) | ✓ | — | — |
+| toy cascade | ✗ 🪧 *(2nd level organizes earlier — see the signpost above)* | ✓ | — | — |
 | built machine | ✓ 100 % → 12 % | ✓ | — | ✓ untouched |
 | pythia-70m | ✓ 76 % → 11 % | ✓ → 5 % | ✓ 73 % | — |
 

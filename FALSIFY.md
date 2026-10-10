@@ -5,6 +5,13 @@ the gesture to a substrate we never touched and **try to falsify the invariant**
 page is the protocol. A clean falsification will be posted in the
 [epilogue](story/epilogue-postcards.md) at full font size, above the confirmations.
 
+> 🪧 **2026-10-10 — two easy targets we left for you.** An adversarial review of our own
+> work found that (a) we never ran the control of freezing a *non-σ* subspace of the same
+> rank, at the same place, and (b) we never stated a case where the freeze should *not*
+> collapse (a redundant notebook). Either one, done cleanly, is now the most valuable
+> contribution you can make — a collapse under (a) counts as a kill of the claim below.
+> Details: [the newest postcard](story/epilogue-postcards.md).
+
 ## The claim you are attacking
 
 > If a capability is carried by a notebook — a slow state the system writes and rereads

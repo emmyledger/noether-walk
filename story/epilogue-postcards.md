@@ -9,6 +9,54 @@ a postcard corrects a chapter, the chapter gets a signpost (chapter 7 wears the 
 one), the claim documents are amended the same day, and this page keeps the story of
 the "before" honest. Newest first.
 
+---
+
+**📮 October 2026 — "We promoted a witness to the gesture. The walk is suspended."**
+
+This is the postcard the standing rule was written for, and it is late.
+
+On 27 July, eleven days after release, we did to our own paper what
+[FALSIFY](../FALSIFY.md) invites you to do: four hostile readings, run independently,
+with the code and the raw register in hand, and every finding re-checked at the source.
+Publication was suspended the same day. It took us until today to say so here.
+
+**What they found.** On the toy cascade — the only non-neural rung, the one that put
+*physics* in our abstract — freezing the slow memory at its average does not stop the
+second stage: it comes *earlier*, and the gap between the stages collapses. What stops
+it is erasing the memory's *source*, a different operation. Our earlier project had
+both, and named them correctly: the first was the matched shadow, a witness; the
+second, the necessity test. We swapped them between projects without seeing it. Next,
+the control that matters most was never run: freeze *another* subspace of the same
+size, at the same place — does the capability die too? Without it, "the notebook is
+necessary" cannot be told apart from "cutting that many dimensions here breaks
+things". Then, the first "validated prediction" (paper §5.3) rests on a redefinition
+of *formation* made after the data came in — and our own register had said so at the
+time, in writing, and asked us to carry the reserve. We did the opposite. Finally, one
+gesture we called pre-registered (`sigma_both`) is in no frozen plan.
+
+**The part that hurts most** is not any single finding. On most of our substrates the
+notebook is plausibly the *only road* to the answer — we diagnosed exactly that on
+grokking (the postcard below) and never applied it to the other rungs. If the notebook
+is the only road, "freezing it collapses the capability" is partly a fact about the
+wiring diagram. And every falsification on this page was peripheral: each one made the
+core claim *smaller* instead of putting it in danger. No world was ever described in
+which the invariant would be false. That is the target we drew at the end of the
+trail — and it turns out we had never loaded the gun.
+
+**What still stands**, by the reviewers' own account: the a-priori designation of the
+notebook, the causality guard of chapter 4, the formation arc (0 of 3 runs form at 16×
+the budget), and the habit of keeping the dead ends on the map. **What changes:** every
+affected place in the paper and the chapters now wears a dated 🪧 signpost; the
+headline claims are suspended; "invariant" should be read as *candidate regularity*.
+**What comes next:** a successor project, pre-registered from scratch, whose first job
+is the missing control — and whose rules forbid the word *invariant* until we have
+predicted, in advance, a case where the freeze does **not** collapse, and seen it
+happen.
+
+The lesson, in one line: our guards checked the *verdicts*; nothing checked the
+*definitions*. The trap did not close on a faked number. It closed on a word — *freeze*
+— that no longer meant the same operation at both ends of the chain.
+
 ![The signposts: three places the walk fell after publication, one plank that held, one coefficient derived — and at the end of the trail, the target never hit: the invariant, waiting for your shot](figures/epilogue-signposts.svg)
 
 ---
