@@ -828,6 +828,18 @@
       "view_uniques": 0,
       "clones": 8,
       "clone_uniques": 6
+    },
+    "2026-11-19": {
+      "views": 0,
+      "view_uniques": 0,
+      "clones": 5,
+      "clone_uniques": 4
+    },
+    "2026-11-20": {
+      "views": 0,
+      "view_uniques": 0,
+      "clones": 3,
+      "clone_uniques": 3
     }
   },
   "snapshots": [
@@ -4861,7 +4873,22 @@
           "uniques": 1
         }
       ]
+    },
+    {
+      "taken_at": "2026-11-21T11:01:17+00:00",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/emmyledger/noether-walk/blob/main/story/ch01-the-graveyard-of-resemblances.md",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
     }
   ],
-  "updated_at": "2026-11-20T11:40:11+00:00"
+  "updated_at": "2026-11-21T11:01:17+00:00"
 }
